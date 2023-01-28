@@ -1,0 +1,7 @@
+version = '1.0'
+group	= 'ua.apulaz.metroclient'
+archivesBaseName = 'client'
+
+dependencies {
+		implementation fileTree(dir: 'libraries', include: ['**/*.jar'])
+	}

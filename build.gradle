@@ -1,0 +1,18 @@
+allprojects {
+	apply plugin: 'java'
+	
+	repositories {
+    mavenLocal()
+    mavenCentral()
+	}
+	
+	targetCompatibility = sourceCompatibility = '1.8'
+    compileJava.options.encoding = compileTestJava.options.encoding = "UTF-8"
+}
+
+subprojects {
+	repositories {
+        mavenCentral()
+        maven { url 'https://libraries.minecraft.net/' }
+    }  
+}
