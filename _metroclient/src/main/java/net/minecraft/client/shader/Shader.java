@@ -18,18 +18,18 @@ public class Shader
     private final ShaderManager manager;
     public final Framebuffer framebufferIn;
     public final Framebuffer framebufferOut;
-    private final List listAuxFramebuffers = Lists.newArrayList();
-    private final List listAuxNames = Lists.newArrayList();
-    private final List listAuxWidths = Lists.newArrayList();
-    private final List listAuxHeights = Lists.newArrayList();
+    private final List<Object> listAuxFramebuffers = Lists.newArrayList();
+    private final List<String> listAuxNames = Lists.newArrayList();
+    private final List<Integer> listAuxWidths = Lists.newArrayList();
+    private final List<Integer> listAuxHeights = Lists.newArrayList();
     private Matrix4f projectionMatrix;
-    private static final String __OBFID = "CL_00001042";
+//    private static final String __OBFID = "CL_00001042";
 
-    public Shader(IResourceManager p_i45089_1_, String p_i45089_2_, Framebuffer p_i45089_3_, Framebuffer p_i45089_4_) throws JsonException
+    public Shader(IResourceManager resourceManager, String programName, Framebuffer framebufferInIn, Framebuffer framebufferOutIn) throws JsonException
     {
-        this.manager = new ShaderManager(p_i45089_1_, p_i45089_2_);
-        this.framebufferIn = p_i45089_3_;
-        this.framebufferOut = p_i45089_4_;
+        this.manager = new ShaderManager(resourceManager, programName);
+        this.framebufferIn = framebufferInIn;
+        this.framebufferOut = framebufferOutIn;
     }
 
     public void deleteShader()
@@ -37,12 +37,12 @@ public class Shader
         this.manager.func_147988_a();
     }
 
-    public void addAuxFramebuffer(String p_148041_1_, Object p_148041_2_, int p_148041_3_, int p_148041_4_)
+    public void addAuxFramebuffer(String auxName, Object auxFramebufferIn, int width, int height)
     {
-        this.listAuxNames.add(this.listAuxNames.size(), p_148041_1_);
-        this.listAuxFramebuffers.add(this.listAuxFramebuffers.size(), p_148041_2_);
-        this.listAuxWidths.add(this.listAuxWidths.size(), Integer.valueOf(p_148041_3_));
-        this.listAuxHeights.add(this.listAuxHeights.size(), Integer.valueOf(p_148041_4_));
+        this.listAuxNames.add(this.listAuxNames.size(), auxName);
+        this.listAuxFramebuffers.add(this.listAuxFramebuffers.size(), auxFramebufferIn);
+        this.listAuxWidths.add(this.listAuxWidths.size(), Integer.valueOf(width));
+        this.listAuxHeights.add(this.listAuxHeights.size(), Integer.valueOf(height));
     }
 
     private void preLoadShader()
@@ -63,28 +63,28 @@ public class Shader
         this.projectionMatrix = p_148045_1_;
     }
 
-    public void loadShader(float p_148042_1_)
+    public void loadShader(float partialTicks)
     {
         this.preLoadShader();
         this.framebufferIn.unbindFramebuffer();
         float f1 = (float)this.framebufferOut.framebufferTextureWidth;
         float f2 = (float)this.framebufferOut.framebufferTextureHeight;
         GL11.glViewport(0, 0, (int)f1, (int)f2);
-        this.manager.func_147992_a("DiffuseSampler", this.framebufferIn);
+        this.manager.addSamplerTexture("DiffuseSampler", this.framebufferIn);
 
         for (int i = 0; i < this.listAuxFramebuffers.size(); ++i)
         {
-            this.manager.func_147992_a((String)this.listAuxNames.get(i), this.listAuxFramebuffers.get(i));
-            this.manager.func_147984_b("AuxSize" + i).func_148087_a((float)((Integer)this.listAuxWidths.get(i)).intValue(), (float)((Integer)this.listAuxHeights.get(i)).intValue());
+            this.manager.addSamplerTexture((String)this.listAuxNames.get(i), this.listAuxFramebuffers.get(i));
+            this.manager.getShaderUniformOrDefault("AuxSize" + i).set((float)((Integer)this.listAuxWidths.get(i)).intValue(), (float)((Integer)this.listAuxHeights.get(i)).intValue());
         }
 
-        this.manager.func_147984_b("ProjMat").func_148088_a(this.projectionMatrix);
-        this.manager.func_147984_b("InSize").func_148087_a((float)this.framebufferIn.framebufferTextureWidth, (float)this.framebufferIn.framebufferTextureHeight);
-        this.manager.func_147984_b("OutSize").func_148087_a(f1, f2);
-        this.manager.func_147984_b("Time").func_148090_a(p_148042_1_);
+        this.manager.getShaderUniformOrDefault("ProjMat").set(this.projectionMatrix);
+        this.manager.getShaderUniformOrDefault("InSize").set((float)this.framebufferIn.framebufferTextureWidth, (float)this.framebufferIn.framebufferTextureHeight);
+        this.manager.getShaderUniformOrDefault("OutSize").set(f1, f2);
+        this.manager.getShaderUniformOrDefault("Time").set(partialTicks);
         Minecraft minecraft = Minecraft.getMinecraft();
-        this.manager.func_147984_b("ScreenSize").func_148087_a((float)minecraft.displayWidth, (float)minecraft.displayHeight);
-        this.manager.func_147995_c();
+        this.manager.getShaderUniformOrDefault("ScreenSize").set((float)minecraft.displayWidth, (float)minecraft.displayHeight);
+        this.manager.useShader();
         this.framebufferOut.framebufferClear();
         this.framebufferOut.bindFramebuffer(false);
         GL11.glDepthMask(false);
@@ -104,6 +104,8 @@ public class Shader
         this.framebufferIn.unbindFramebufferTexture();
         Iterator iterator = this.listAuxFramebuffers.iterator();
 
+        
+        //TODO: заменить на for в будущем
         while (iterator.hasNext())
         {
             Object object = iterator.next();

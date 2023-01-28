@@ -280,7 +280,7 @@ public class OpenGlHelper
       return field_153214_y ? ARBShaderObjects.glGetUniformLocationARB(p_153194_0_, p_153194_1_) : GL20.glGetUniformLocation(p_153194_0_, p_153194_1_);
 }
 
-  public static void func_153181_a(int p_153181_0_, IntBuffer p_153181_1_) {
+  public static void glUniform1(int p_153181_0_, IntBuffer p_153181_1_) {
       if (field_153214_y) {
             ARBShaderObjects.glUniform1ARB(p_153181_0_, p_153181_1_);
       } else {
@@ -307,7 +307,7 @@ public class OpenGlHelper
 
 }
 
-  public static void func_153182_b(int p_153182_0_, IntBuffer p_153182_1_) {
+  public static void glUniform2(int p_153182_0_, IntBuffer p_153182_1_) {
       if (field_153214_y) {
             ARBShaderObjects.glUniform2ARB(p_153182_0_, p_153182_1_);
       } else {
@@ -325,7 +325,7 @@ public class OpenGlHelper
 
 }
 
-      public static void func_153192_c(int p_153192_0_, IntBuffer p_153192_1_) {
+      public static void glUniform3(int p_153192_0_, IntBuffer p_153192_1_) {
             if (field_153214_y) {
                   ARBShaderObjects.glUniform3ARB(p_153192_0_, p_153192_1_);
             } else {
@@ -343,7 +343,7 @@ public class OpenGlHelper
 
       }
 
-      public static void func_153162_d(int p_153162_0_, IntBuffer p_153162_1_) {
+      public static void glUniform4(int p_153162_0_, IntBuffer p_153162_1_) {
             if (field_153214_y) {
                   ARBShaderObjects.glUniform4ARB(p_153162_0_, p_153162_1_);
             } else {

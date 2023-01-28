@@ -28,7 +28,7 @@ public class JsonException extends IOException
         this.field_151382_b = p_i45280_1_;
     }
 
-    public void func_151380_a(String p_151380_1_)
+    public void prependJsonKey(String p_151380_1_)
     {
         ((JsonException.Entry)this.field_151383_a.get(0)).func_151373_a(p_151380_1_);
     }

@@ -25,7 +25,7 @@ public class JsonUtils
      * Is the given JsonElement a string?
      */
     @SideOnly(Side.CLIENT)
-    public static boolean jsonElementTypeIsString(JsonElement p_151211_0_)
+    public static boolean isString(JsonElement p_151211_0_)
     {
         return !p_151211_0_.isJsonPrimitive() ? false : p_151211_0_.getAsJsonPrimitive().isString();
     }
@@ -68,14 +68,14 @@ public class JsonUtils
         }
         else
         {
-            throw new JsonSyntaxException("Expected " + p_151206_1_ + " to be a string, was " + getJsonElementTypeDescription(p_151206_0_));
+            throw new JsonSyntaxException("Expected " + p_151206_1_ + " to be a string, was " + toString(p_151206_0_));
         }
     }
 
     /**
      * Gets the string value of the field on the JsonObject with the given name.
      */
-    public static String getJsonObjectStringFieldValue(JsonObject p_151200_0_, String p_151200_1_)
+    public static String getString(JsonObject p_151200_0_, String p_151200_1_)
     {
         if (p_151200_0_.has(p_151200_1_))
         {
@@ -114,7 +114,7 @@ public class JsonUtils
         }
         else
         {
-            throw new JsonSyntaxException("Expected " + p_151216_1_ + " to be a Boolean, was " + getJsonElementTypeDescription(p_151216_0_));
+            throw new JsonSyntaxException("Expected " + p_151216_1_ + " to be a Boolean, was " + toString(p_151216_0_));
         }
     }
 
@@ -161,7 +161,7 @@ public class JsonUtils
         }
         else
         {
-            throw new JsonSyntaxException("Expected " + p_151220_1_ + " to be a Float, was " + getJsonElementTypeDescription(p_151220_0_));
+            throw new JsonSyntaxException("Expected " + p_151220_1_ + " to be a Float, was " + toString(p_151220_0_));
         }
     }
 
@@ -207,7 +207,7 @@ public class JsonUtils
         }
         else
         {
-            throw new JsonSyntaxException("Expected " + p_151215_1_ + " to be a Int, was " + getJsonElementTypeDescription(p_151215_0_));
+            throw new JsonSyntaxException("Expected " + p_151215_1_ + " to be a Int, was " + toString(p_151215_0_));
         }
     }
 
@@ -235,7 +235,7 @@ public class JsonUtils
      * field is missing.
      */
     @SideOnly(Side.CLIENT)
-    public static int getJsonObjectIntegerFieldValueOrDefault(JsonObject p_151208_0_, String p_151208_1_, int p_151208_2_)
+    public static int getInt(JsonObject p_151208_0_, String p_151208_1_, int p_151208_2_)
     {
         return p_151208_0_.has(p_151208_1_) ? getJsonElementIntegerValue(p_151208_0_.get(p_151208_1_), p_151208_1_) : p_151208_2_;
     }
@@ -244,32 +244,32 @@ public class JsonUtils
      * Gets the given JsonElement as a JsonObject.  Expects the second parameter to be the name of the element's field
      * if an error message needs to be thrown.
      */
-    public static JsonObject getJsonElementAsJsonObject(JsonElement p_151210_0_, String p_151210_1_)
+    public static JsonObject getJsonObject(JsonElement json, String memberName)
     {
-        if (p_151210_0_.isJsonObject())
+        if (json.isJsonObject())
         {
-            return p_151210_0_.getAsJsonObject();
+            return json.getAsJsonObject();
         }
         else
         {
-            throw new JsonSyntaxException("Expected " + p_151210_1_ + " to be a JsonObject, was " + getJsonElementTypeDescription(p_151210_0_));
+            throw new JsonSyntaxException("Expected " + memberName + " to be a JsonObject, was " + toString(json));
         }
     }
 
     @SideOnly(Side.CLIENT)
-    public static JsonObject func_152754_s(JsonObject p_152754_0_, String p_152754_1_)
+    public static JsonObject getJsonObject(JsonObject json, String memberName)
     {
-        if (p_152754_0_.has(p_152754_1_))
+        if (json.has(memberName))
         {
             /**
              * Gets the given JsonElement as a JsonObject.  Expects the second parameter to be the name of the element's
              * field if an error message needs to be thrown.
              */
-            return getJsonElementAsJsonObject(p_152754_0_.get(p_152754_1_), p_152754_1_);
+            return getJsonObject(json.get(memberName), memberName);
         }
         else
         {
-            throw new JsonSyntaxException("Missing " + p_152754_1_ + ", expected to find a JsonObject");
+            throw new JsonSyntaxException("Missing " + memberName + ", expected to find a JsonObject");
         }
     }
 
@@ -280,7 +280,7 @@ public class JsonUtils
     @SideOnly(Side.CLIENT)
     public static JsonObject getJsonObjectFieldOrDefault(JsonObject p_151218_0_, String p_151218_1_, JsonObject p_151218_2_)
     {
-        return p_151218_0_.has(p_151218_1_) ? getJsonElementAsJsonObject(p_151218_0_.get(p_151218_1_), p_151218_1_) : p_151218_2_;
+        return p_151218_0_.has(p_151218_1_) ? getJsonObject(p_151218_0_.get(p_151218_1_), p_151218_1_) : p_151218_2_;
     }
 
     /**
@@ -295,7 +295,7 @@ public class JsonUtils
         }
         else
         {
-            throw new JsonSyntaxException("Expected " + p_151207_1_ + " to be a JsonArray, was " + getJsonElementTypeDescription(p_151207_0_));
+            throw new JsonSyntaxException("Expected " + p_151207_1_ + " to be a JsonArray, was " + toString(p_151207_0_));
         }
     }
 
@@ -323,7 +323,7 @@ public class JsonUtils
      * missing.
      */
     @SideOnly(Side.CLIENT)
-    public static JsonArray getJsonObjectJsonArrayFieldOrDefault(JsonObject p_151213_0_, String p_151213_1_, JsonArray p_151213_2_)
+    public static JsonArray getJsonArray(JsonObject p_151213_0_, String p_151213_1_, JsonArray p_151213_2_)
     {
         return p_151213_0_.has(p_151213_1_) ? getJsonElementAsJsonArray(p_151213_0_.get(p_151213_1_), p_151213_1_) : p_151213_2_;
     }
@@ -331,7 +331,7 @@ public class JsonUtils
     /**
      * Gets a human-readable description of the given JsonElement's type.  For example: "a number (4)"
      */
-    public static String getJsonElementTypeDescription(JsonElement p_151222_0_)
+    public static String toString(JsonElement p_151222_0_)
     {
         String s = org.apache.commons.lang3.StringUtils.abbreviateMiddle(String.valueOf(p_151222_0_), "...", 10);
 

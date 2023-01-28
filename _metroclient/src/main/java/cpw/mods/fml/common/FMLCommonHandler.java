@@ -202,7 +202,7 @@ public class FMLCommonHandler
 
     /*
     
-    ÒÅÊÑÒ ÑËÅÂÀ, ÂÍÈÇÓ
+    ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½
     
     */
     public void computeBranding()
@@ -213,7 +213,7 @@ public class FMLCommonHandler
             //brd.add(Loader.instance().getMCVersionString());
             //brd.add(Loader.instance().getMCPVersionString());
             //brd.add("FML v"+Loader.instance().getFMLVersionString());
-            brd.add("Metro 2033 M.P. Client a:b.1 (indev)");
+            brd.add("Metro 2033 Minecraft Project Client for Testing");
             String forgeBranding = (String) callForgeMethod("getBrandingVersion");
             if (!Strings.isNullOrEmpty(forgeBranding))
             {

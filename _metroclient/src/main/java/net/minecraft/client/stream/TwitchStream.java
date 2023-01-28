@@ -92,12 +92,12 @@ public class TwitchStream implements BroadcastController.BroadcastListener, Chat
                     {
                         URL url = new URL("https://api.twitch.tv/kraken?oauth_token=" + URLEncoder.encode(p_i1012_2_, "UTF-8"));
                         String s = HttpUtil.func_152755_a(url);
-                        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject((new JsonParser()).parse(s), "Response");
-                        JsonObject jsonobject1 = JsonUtils.func_152754_s(jsonobject, "token");
+                        JsonObject jsonobject = JsonUtils.getJsonObject((new JsonParser()).parse(s), "Response");
+                        JsonObject jsonobject1 = JsonUtils.getJsonObject(jsonobject, "token");
 
                         if (JsonUtils.getJsonObjectBooleanFieldValue(jsonobject1, "valid"))
                         {
-                            String s1 = JsonUtils.getJsonObjectStringFieldValue(jsonobject1, "user_name");
+                            String s1 = JsonUtils.getString(jsonobject1, "user_name");
                             TwitchStream.field_152950_b.debug(TwitchStream.field_152949_a, "Authenticated with twitch; username is {}", new Object[] {s1});
                             AuthToken authtoken = new AuthToken();
                             authtoken.data = p_i1012_2_;

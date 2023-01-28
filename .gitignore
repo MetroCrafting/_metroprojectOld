@@ -6,10 +6,9 @@ bin
 .classpath
 .project
 
-# gradle
-build
-.gradle
-
 # other
 eclipse
-run
+/_metroclient/run/
+/_metroclient/build/
+
+.gradle/**

@@ -91,8 +91,8 @@ public class ServerStatusResponse
 
                     public ServerStatusResponse.MinecraftProtocolVersionIdentifier deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
                     {
-                        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_deserialize_1_, "version");
-                        return new ServerStatusResponse.MinecraftProtocolVersionIdentifier(JsonUtils.getJsonObjectStringFieldValue(jsonobject, "name"), JsonUtils.getJsonObjectIntegerFieldValue(jsonobject, "protocol"));
+                        JsonObject jsonobject = JsonUtils.getJsonObject(p_deserialize_1_, "version");
+                        return new ServerStatusResponse.MinecraftProtocolVersionIdentifier(JsonUtils.getString(jsonobject, "name"), JsonUtils.getJsonObjectIntegerFieldValue(jsonobject, "protocol"));
                     }
 
                     public JsonElement serialize(ServerStatusResponse.MinecraftProtocolVersionIdentifier p_serialize_1_, Type p_serialize_2_, JsonSerializationContext p_serialize_3_)
@@ -149,7 +149,7 @@ public class ServerStatusResponse
 
                     public ServerStatusResponse.PlayerCountData deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
                     {
-                        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_deserialize_1_, "players");
+                        JsonObject jsonobject = JsonUtils.getJsonObject(p_deserialize_1_, "players");
                         ServerStatusResponse.PlayerCountData playercountdata = new ServerStatusResponse.PlayerCountData(JsonUtils.getJsonObjectIntegerFieldValue(jsonobject, "max"), JsonUtils.getJsonObjectIntegerFieldValue(jsonobject, "online"));
 
                         if (JsonUtils.jsonObjectFieldTypeIsArray(jsonobject, "sample"))
@@ -162,9 +162,9 @@ public class ServerStatusResponse
 
                                 for (int i = 0; i < agameprofile.length; ++i)
                                 {
-                                    JsonObject jsonobject1 = JsonUtils.getJsonElementAsJsonObject(jsonarray.get(i), "player[" + i + "]");
-                                    String s = JsonUtils.getJsonObjectStringFieldValue(jsonobject1, "id");
-                                    agameprofile[i] = new GameProfile(UUID.fromString(s), JsonUtils.getJsonObjectStringFieldValue(jsonobject1, "name"));
+                                    JsonObject jsonobject1 = JsonUtils.getJsonObject(jsonarray.get(i), "player[" + i + "]");
+                                    String s = JsonUtils.getString(jsonobject1, "id");
+                                    agameprofile[i] = new GameProfile(UUID.fromString(s), JsonUtils.getString(jsonobject1, "name"));
                                 }
 
                                 playercountdata.func_151330_a(agameprofile);
@@ -212,7 +212,7 @@ public class ServerStatusResponse
 
             public ServerStatusResponse deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
             {
-                JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_deserialize_1_, "status");
+                JsonObject jsonobject = JsonUtils.getJsonObject(p_deserialize_1_, "status");
                 ServerStatusResponse serverstatusresponse = new ServerStatusResponse();
 
                 if (jsonobject.has("description"))
@@ -232,7 +232,7 @@ public class ServerStatusResponse
 
                 if (jsonobject.has("favicon"))
                 {
-                    serverstatusresponse.func_151320_a(JsonUtils.getJsonObjectStringFieldValue(jsonobject, "favicon"));
+                    serverstatusresponse.func_151320_a(JsonUtils.getString(jsonobject, "favicon"));
                 }
 
                 FMLClientHandler.instance().captureAdditionalData(serverstatusresponse, jsonobject);

@@ -63,9 +63,9 @@ public class ShaderManager
         {
             inputstream = p_i45087_1_.getResource(resourcelocation).getInputStream();
             JsonObject jsonobject = jsonparser.parse(IOUtils.toString(inputstream, Charsets.UTF_8)).getAsJsonObject();
-            String s1 = JsonUtils.getJsonObjectStringFieldValue(jsonobject, "vertex");
-            String s2 = JsonUtils.getJsonObjectStringFieldValue(jsonobject, "fragment");
-            JsonArray jsonarray = JsonUtils.getJsonObjectJsonArrayFieldOrDefault(jsonobject, "samplers", (JsonArray)null);
+            String s1 = JsonUtils.getString(jsonobject, "vertex");
+            String s2 = JsonUtils.getString(jsonobject, "fragment");
+            JsonArray jsonarray = JsonUtils.getJsonArray(jsonobject, "samplers", (JsonArray)null);
 
             if (jsonarray != null)
             {
@@ -82,13 +82,13 @@ public class ShaderManager
                     catch (Exception exception2)
                     {
                         JsonException jsonexception1 = JsonException.func_151379_a(exception2);
-                        jsonexception1.func_151380_a("samplers[" + i + "]");
+                        jsonexception1.prependJsonKey("samplers[" + i + "]");
                         throw jsonexception1;
                     }
                 }
             }
 
-            JsonArray jsonarray1 = JsonUtils.getJsonObjectJsonArrayFieldOrDefault(jsonobject, "attributes", (JsonArray)null);
+            JsonArray jsonarray1 = JsonUtils.getJsonArray(jsonobject, "attributes", (JsonArray)null);
             Iterator iterator1;
 
             if (jsonarray1 != null)
@@ -108,7 +108,7 @@ public class ShaderManager
                     catch (Exception exception1)
                     {
                         JsonException jsonexception2 = JsonException.func_151379_a(exception1);
-                        jsonexception2.func_151380_a("attributes[" + j + "]");
+                        jsonexception2.prependJsonKey("attributes[" + j + "]");
                         throw jsonexception2;
                     }
                 }
@@ -119,7 +119,7 @@ public class ShaderManager
                 this.field_148014_r = null;
             }
 
-            JsonArray jsonarray2 = JsonUtils.getJsonObjectJsonArrayFieldOrDefault(jsonobject, "uniforms", (JsonArray)null);
+            JsonArray jsonarray2 = JsonUtils.getJsonArray(jsonobject, "uniforms", (JsonArray)null);
 
             if (jsonarray2 != null)
             {
@@ -136,7 +136,7 @@ public class ShaderManager
                     catch (Exception exception)
                     {
                         JsonException jsonexception3 = JsonException.func_151379_a(exception);
-                        jsonexception3.func_151380_a("uniforms[" + k + "]");
+                        jsonexception3.prependJsonKey("uniforms[" + k + "]");
                         throw jsonexception3;
                     }
                 }
@@ -198,7 +198,7 @@ public class ShaderManager
         }
     }
 
-    public void func_147995_c()
+    public void useShader()
     {
         this.field_148005_o = false;
         staticShaderManager = this;
@@ -259,7 +259,7 @@ public class ShaderManager
         while (iterator.hasNext())
         {
             ShaderUniform shaderuniform = (ShaderUniform)iterator.next();
-            shaderuniform.func_148093_b();
+            shaderuniform.upload();
         }
     }
 
@@ -273,7 +273,7 @@ public class ShaderManager
         return this.field_148009_k.containsKey(p_147991_1_) ? (ShaderUniform)this.field_148009_k.get(p_147991_1_) : null;
     }
 
-    public ShaderUniform func_147984_b(String p_147984_1_)
+    public ShaderUniform getShaderUniformOrDefault(String p_147984_1_)
     {
         return (ShaderUniform)(this.field_148009_k.containsKey(p_147984_1_) ? (ShaderUniform)this.field_148009_k.get(p_147984_1_) : defaultShaderUniform);
     }
@@ -309,7 +309,7 @@ public class ShaderManager
         while (iterator.hasNext())
         {
             ShaderUniform shaderuniform = (ShaderUniform)iterator.next();
-            s = shaderuniform.func_148086_a();
+            s = shaderuniform.getShaderName();
             k = OpenGlHelper.func_153194_a(this.field_148006_l, s);
 
             if (k == -1)
@@ -319,7 +319,7 @@ public class ShaderManager
             else
             {
                 this.field_148008_j.add(Integer.valueOf(k));
-                shaderuniform.func_148084_b(k);
+                shaderuniform.setUniformLocation(k);
                 this.field_148009_k.put(s, shaderuniform);
             }
         }
@@ -327,8 +327,8 @@ public class ShaderManager
 
     private void func_147996_a(JsonElement p_147996_1_)
     {
-        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_147996_1_, "sampler");
-        String s = JsonUtils.getJsonObjectStringFieldValue(jsonobject, "name");
+        JsonObject jsonobject = JsonUtils.getJsonObject(p_147996_1_, "sampler");
+        String s = JsonUtils.getString(jsonobject, "name");
 
         if (!JsonUtils.jsonObjectFieldTypeIsString(jsonobject, "file"))
         {
@@ -341,7 +341,7 @@ public class ShaderManager
         }
     }
 
-    public void func_147992_a(String p_147992_1_, Object p_147992_2_)
+    public void addSamplerTexture(String p_147992_1_, Object p_147992_2_)
     {
         if (this.field_147997_f.containsKey(p_147992_1_))
         {
@@ -354,9 +354,9 @@ public class ShaderManager
 
     private void func_147987_b(JsonElement p_147987_1_) throws JsonException
     {
-        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_147987_1_, "uniform");
-        String s = JsonUtils.getJsonObjectStringFieldValue(jsonobject, "name");
-        int i = ShaderUniform.func_148085_a(JsonUtils.getJsonObjectStringFieldValue(jsonobject, "type"));
+        JsonObject jsonobject = JsonUtils.getJsonObject(p_147987_1_, "uniform");
+        String s = JsonUtils.getString(jsonobject, "name");
+        int i = ShaderUniform.parseType(JsonUtils.getString(jsonobject, "type"));
         int j = JsonUtils.getJsonObjectIntegerFieldValue(jsonobject, "count");
         float[] afloat = new float[Math.max(j, 16)];
         JsonArray jsonarray = JsonUtils.getJsonObjectJsonArrayField(jsonobject, "values");
@@ -380,7 +380,7 @@ public class ShaderManager
                 catch (Exception exception)
                 {
                     JsonException jsonexception = JsonException.func_151379_a(exception);
-                    jsonexception.func_151380_a("values[" + k + "]");
+                    jsonexception.prependJsonKey("values[" + k + "]");
                     throw jsonexception;
                 }
             }
@@ -399,15 +399,15 @@ public class ShaderManager
 
             if (i <= 3)
             {
-                shaderuniform.func_148083_a((int)afloat[0], (int)afloat[1], (int)afloat[2], (int)afloat[3]);
+                shaderuniform.set((int)afloat[0], (int)afloat[1], (int)afloat[2], (int)afloat[3]);
             }
             else if (i <= 7)
             {
-                shaderuniform.func_148092_b(afloat[0], afloat[1], afloat[2], afloat[3]);
+                shaderuniform.setSafe(afloat[0], afloat[1], afloat[2], afloat[3]);
             }
             else
             {
-                shaderuniform.func_148097_a(afloat);
+                shaderuniform.set(afloat);
             }
 
             this.field_148011_i.add(shaderuniform);

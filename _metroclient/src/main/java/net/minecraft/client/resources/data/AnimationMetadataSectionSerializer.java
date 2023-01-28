@@ -24,8 +24,8 @@ public class AnimationMetadataSectionSerializer extends BaseMetadataSectionSeria
     public AnimationMetadataSection deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
     {
         ArrayList arraylist = Lists.newArrayList();
-        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_deserialize_1_, "metadata section");
-        int i = JsonUtils.getJsonObjectIntegerFieldValueOrDefault(jsonobject, "frametime", 1);
+        JsonObject jsonobject = JsonUtils.getJsonObject(p_deserialize_1_, "metadata section");
+        int i = JsonUtils.getInt(jsonobject, "frametime", 1);
 
         if (i != 1)
         {
@@ -57,8 +57,8 @@ public class AnimationMetadataSectionSerializer extends BaseMetadataSectionSeria
             }
         }
 
-        int k = JsonUtils.getJsonObjectIntegerFieldValueOrDefault(jsonobject, "width", -1);
-        j = JsonUtils.getJsonObjectIntegerFieldValueOrDefault(jsonobject, "height", -1);
+        int k = JsonUtils.getInt(jsonobject, "width", -1);
+        j = JsonUtils.getInt(jsonobject, "height", -1);
 
         if (k != -1)
         {
@@ -81,8 +81,8 @@ public class AnimationMetadataSectionSerializer extends BaseMetadataSectionSeria
         }
         else if (p_110492_2_.isJsonObject())
         {
-            JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_110492_2_, "frames[" + p_110492_1_ + "]");
-            int j = JsonUtils.getJsonObjectIntegerFieldValueOrDefault(jsonobject, "time", -1);
+            JsonObject jsonobject = JsonUtils.getJsonObject(p_110492_2_, "frames[" + p_110492_1_ + "]");
+            int j = JsonUtils.getInt(jsonobject, "time", -1);
 
             if (jsonobject.has("time"))
             {

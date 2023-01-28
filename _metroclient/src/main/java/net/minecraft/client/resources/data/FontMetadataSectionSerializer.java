@@ -59,7 +59,7 @@ public class FontMetadataSectionSerializer extends BaseMetadataSectionSerializer
 
                 if (jsonelement1 != null)
                 {
-                    JsonObject jsonobject3 = JsonUtils.getJsonElementAsJsonObject(jsonelement1, "characters[" + i + "]");
+                    JsonObject jsonobject3 = JsonUtils.getJsonObject(jsonelement1, "characters[" + i + "]");
                     f3 = JsonUtils.getJsonObjectFloatFieldValueOrDefault(jsonobject3, "width", f);
                     Validate.inclusiveBetween(Float.valueOf(0.0F), Float.valueOf(Float.MAX_VALUE), Float.valueOf(f3), "Invalid width", new Object[0]);
                     f4 = JsonUtils.getJsonObjectFloatFieldValueOrDefault(jsonobject3, "spacing", f1);

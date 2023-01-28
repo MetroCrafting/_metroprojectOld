@@ -18,7 +18,7 @@ public class SoundListSerializer implements JsonDeserializer
 
     public SoundList deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
     {
-        JsonObject jsonobject = JsonUtils.getJsonElementAsJsonObject(p_deserialize_1_, "entry");
+        JsonObject jsonobject = JsonUtils.getJsonObject(p_deserialize_1_, "entry");
         SoundList soundlist = new SoundList();
         soundlist.setReplaceExisting(JsonUtils.getJsonObjectBooleanFieldValueOrDefault(jsonobject, "replace", false));
         SoundCategory soundcategory = SoundCategory.func_147154_a(JsonUtils.getJsonObjectStringFieldValueOrDefault(jsonobject, "category", SoundCategory.MASTER.getCategoryName()));
@@ -34,18 +34,18 @@ public class SoundListSerializer implements JsonDeserializer
                 JsonElement jsonelement1 = jsonarray.get(i);
                 SoundList.SoundEntry soundentry = new SoundList.SoundEntry();
 
-                if (JsonUtils.jsonElementTypeIsString(jsonelement1))
+                if (JsonUtils.isString(jsonelement1))
                 {
                     soundentry.setSoundEntryName(JsonUtils.getJsonElementStringValue(jsonelement1, "sound"));
                 }
                 else
                 {
-                    JsonObject jsonobject1 = JsonUtils.getJsonElementAsJsonObject(jsonelement1, "sound");
-                    soundentry.setSoundEntryName(JsonUtils.getJsonObjectStringFieldValue(jsonobject1, "name"));
+                    JsonObject jsonobject1 = JsonUtils.getJsonObject(jsonelement1, "sound");
+                    soundentry.setSoundEntryName(JsonUtils.getString(jsonobject1, "name"));
 
                     if (jsonobject1.has("type"))
                     {
-                        SoundList.SoundEntry.Type type1 = SoundList.SoundEntry.Type.getType(JsonUtils.getJsonObjectStringFieldValue(jsonobject1, "type"));
+                        SoundList.SoundEntry.Type type1 = SoundList.SoundEntry.Type.getType(JsonUtils.getString(jsonobject1, "type"));
                         Validate.notNull(type1, "Invalid type", new Object[0]);
                         soundentry.setSoundEntryType(type1);
                     }

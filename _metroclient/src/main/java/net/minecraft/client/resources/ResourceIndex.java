@@ -51,7 +51,7 @@ public class ResourceIndex
                         String s1 = (String)entry.getKey();
                         String[] astring = s1.split("/", 2);
                         String s2 = astring.length == 1 ? astring[0] : astring[0] + ":" + astring[1];
-                        String s3 = JsonUtils.getJsonObjectStringFieldValue(jsonobject2, "hash");
+                        String s3 = JsonUtils.getString(jsonobject2, "hash");
                         File file4 = new File(file2, s3.substring(0, 2) + "/" + s3);
                         this.field_152784_b.put(s2, file4);
                     }
