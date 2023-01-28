@@ -1,6 +1,5 @@
 package net.minecraft.src;
 
-import java.lang.reflect.Field;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemRenderer;
@@ -18,22 +17,24 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
-
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
-
 import shadersmod.client.Shaders;
 
-public class ItemRendererOF extends ItemRenderer {
-      private Minecraft mc = null;
-      private RenderBlocks renderBlocksIr = null;
-      private static final ResourceLocation RES_ITEM_GLINT = new ResourceLocation("textures/misc/enchanted_item_glint.png");
+public class ItemRendererOF extends ItemRenderer
+{
+    private Minecraft mc;
+    private static final ResourceLocation RES_ITEM_GLINT = new ResourceLocation("textures/misc/enchanted_item_glint.png");
 
-      public ItemRendererOF(Minecraft par1Minecraft) {
-            super(par1Minecraft);
-            this.mc = par1Minecraft;
-      }
+    public ItemRendererOF(Minecraft par1Minecraft)
+    {
+        super(par1Minecraft);
+        this.mc = par1Minecraft;
+    }
 
+    /**
+     * Renders the item stack for being in an entity's hand Args: itemStack
+     */
     public void renderItem(EntityLivingBase par1EntityLivingBase, ItemStack par2ItemStack, int par3)
     {
         GL11.glPushMatrix();
@@ -150,17 +151,23 @@ public class ItemRendererOF extends ItemRenderer {
         GL11.glPopMatrix();
     }
 
-      public void renderItemInFirstPerson(float par1) {
-            this.mc.theWorld.renderItemInFirstPerson = true;
-            super.renderItemInFirstPerson(par1);
-            this.mc.theWorld.renderItemInFirstPerson = false;
-      }
+    /**
+     * Renders the active item in the player's hand when in first person mode. Args: partialTickTime
+     */
+    public void renderItemInFirstPerson(float tickTime)
+    {
+        this.mc.theWorld.renderItemInFirstPerson = true;
+        super.renderItemInFirstPerson(tickTime);
+        this.mc.theWorld.renderItemInFirstPerson = false;
+    }
 
-      public void updateEquippedItem() {
-            super.updateEquippedItem();
-            if (Config.isShaders()) {
-                Shaders.setItemToRenderMain(this.itemToRender);
-            }
+    public void updateEquippedItem()
+    {
+        super.updateEquippedItem();
 
-      }
+        if (Config.isShaders())
+        {
+            Shaders.setItemToRenderMain(this.itemToRender);
+        }
+    }
 }
