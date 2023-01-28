@@ -1,93 +1,68 @@
-[14:31:42] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
-[14:31:42] [main/INFO] [FML/]: Loading Modificated FML for Metro Project.
-[14:31:42] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_341, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_341
-[14:31:42] [main/DEBUG] [FML/]: Java classpath at launch is D:\_metroproject\_metroproject\_metroclient\bin\main;D:\_metroproject\_metroproject\_metroclient\bin\default;D:\_metroproject\_metroproject\_metroclient\libraries\vecmath-1.5.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-jpms-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1-sources.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\guava\guava\17.0\guava-17.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\netty\1.6\netty-1.6.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\realms\1.3.5\realms-1.3.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\io\netty\netty-all\4.0.10.Final\netty-all-4.0.10.Final.jar;D:\_metroproject\_metroproject\_metroclient\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4\lwjgl-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4\lwjgl_util-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl-platform\2.9.4\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\ow2\asm\asm-all\5.0.3\asm-debug-all-5.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch\5.16\twitch-5.16.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-external-platform\4.5\twitch-external-platform-4.5-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-platform\5.16\twitch-platform-5.16-natives-windows-64.jar
-[14:31:42] [main/DEBUG] [FML/]: Java library path at launch is C:\Program Files\Java\jre1.8.0_341\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-17.0.5/bin/server;C:/Program Files/Java/jdk-17.0.5/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WorldPainter;C:\Program Files (x86)\Shell;C:\Program Files (x86)\Java\jre1.8.0_341\bin;C:\Gradle\bin;C:\Program Files\Java\jdk-11.0.16.1+1\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Users\edwar\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\edwar\AppData\Local\Programs\Python\Python310\;C:\Users\edwar\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Shell;C:\Program Files (x86)\Java\jre1.8.0_341\bin;C:\Gradle\bin;C:\Windows\apktool;C:\Program Files\Java\jdk-11.0.16.1+1\bin;C:\Users\edwar\AppData\Local\GitHubDesktop\bin;C:\Users\edwar\.dotnet\tools;C:\WINDOWS\system32;;.
-[14:31:42] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[14:31:42] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
-[14:31:42] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
-[14:31:42] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
-[14:31:42] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
-[14:31:42] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
-[14:31:42] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
-[14:31:42] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
-[14:31:42] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to D:\_metroproject\_metroproject\_metroclient\run\.
-[14:31:42] [main/DEBUG] [FML/]: Discovering coremods
-[14:31:42] [main/INFO] [LaunchWrapper/]: Calling tweak class optifine.OptiFineForgeTweaker
-[14:31:42] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: acceptOptions
-[14:31:42] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: injectIntoClassLoader
-[14:31:42] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: OptiFine ClassTransformer
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: java.io.FileNotFoundException: D:\_metroproject\_metroproject\_metroclient\bin\main (Отказано в доступе)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.open(Native Method)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at optifine.OptiFineClassTransformer.<init>(OptiFineClassTransformer.java:29)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.Class.newInstance(Unknown Source)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.LaunchClassLoader.registerTransformer(LaunchClassLoader.java:88)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at optifine.OptiFineForgeTweaker.injectIntoClassLoader(OptiFineForgeTweaker.java:18)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115)
-[14:31:42] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
-[14:31:42] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: *** Can not find the OptiFine JAR in the classpath ***
-[14:31:42] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: *** OptiFine will not be loaded! ***
-[14:31:42] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[14:31:42] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[14:31:42] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[14:31:42] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[14:31:42] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[14:31:42] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
-[14:31:42] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
-[14:31:42] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
-[14:31:42] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
-[14:31:42] [main/DEBUG] [FML/]: Injection complete
-[14:31:42] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
-[14:31:42] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
-[14:31:42] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[14:31:44] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
-[14:31:44] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[14:31:44] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
-[14:31:44] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
-[14:31:44] [main/DEBUG] [FML/]: Injection complete
-[14:31:44] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
-[14:31:44] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
-[14:31:44] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
-[14:31:44] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[14:31:44] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
-[14:31:44] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
-[14:31:44] [main/DEBUG] [FML/]: Validating minecraft
-[14:31:45] [main/DEBUG] [FML/]: Minecraft validated, launching...
-[14:31:45] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
-[14:31:45] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
-[14:31:45] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: getLaunchArguments
-[14:31:45] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[14:31:46] [main/ERROR] [LaunchWrapper/]: Unable to launch
+[03:55:06] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[03:55:06] [main/INFO] [FML/]: Loading Modificated FML for Metro Project.
+[03:55:06] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_341, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_341\jre
+[03:55:06] [main/DEBUG] [FML/]: Java classpath at launch is D:\_metroproject\_metroproject\_metroclient\bin\main;D:\_metroproject\_metroproject\_metroclient\bin\default;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1-sources.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\guava\guava\17.0\guava-17.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\netty\1.6\netty-1.6.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\realms\1.3.5\realms-1.3.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\io\netty\netty-all\4.0.10.Final\netty-all-4.0.10.Final.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-jpms-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4\lwjgl-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl-platform\2.9.4\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4\lwjgl_util-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\ow2\asm\asm-all\5.0.3\asm-debug-all-5.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch\5.16\twitch-5.16.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-external-platform\4.5\twitch-external-platform-4.5-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-platform\5.16\twitch-platform-5.16-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\vecmath-1.5.2.jar
+[03:55:06] [main/DEBUG] [FML/]: Java library path at launch is D:\_metroproject\_metroproject\_metroclient\native
+[03:55:06] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[03:55:06] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[03:55:06] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[03:55:06] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[03:55:06] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[03:55:06] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
+[03:55:06] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[03:55:06] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[03:55:06] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to D:\_metroproject\_metroproject\_metroclient\run\.
+[03:55:06] [main/DEBUG] [FML/]: Discovering coremods
+[03:55:06] [main/INFO] [LaunchWrapper/]: Calling tweak class optifine.OptiFineForgeTweaker
+[03:55:06] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: acceptOptions
+[03:55:06] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: Forge server detected, skipping class transformer
+[03:55:06] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[03:55:06] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[03:55:06] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[03:55:06] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[03:55:06] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[03:55:06] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
+[03:55:06] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+[03:55:07] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+[03:55:07] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+[03:55:07] [main/DEBUG] [FML/]: Injection complete
+[03:55:07] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
+[03:55:07] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[03:55:07] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[03:55:08] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[03:55:08] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[03:55:08] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[03:55:08] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
+[03:55:08] [main/DEBUG] [FML/]: Injection complete
+[03:55:08] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[03:55:08] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[03:55:08] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[03:55:08] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[03:55:08] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
+[03:55:08] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
+[03:55:08] [main/DEBUG] [FML/]: Validating minecraft
+[03:55:09] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[03:55:09] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[03:55:09] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[03:55:09] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: getLaunchArguments
+[03:55:09] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[03:55:10] [main/ERROR] [LaunchWrapper/]: Unable to launch
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_341]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_341]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_341]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_341]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_341]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-Caused by: java.lang.UnsatisfiedLinkError: no lwjgl64 in java.library.path
-	at java.lang.ClassLoader.loadLibrary(Unknown Source) ~[?:1.8.0_341]
-	at java.lang.Runtime.loadLibrary0(Unknown Source) ~[?:1.8.0_341]
-	at java.lang.System.loadLibrary(Unknown Source) ~[?:1.8.0_341]
-	at org.lwjgl.Sys$1.run(Sys.java:72) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_341]
-	at org.lwjgl.Sys.doLoadLibrary(Sys.java:66) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at org.lwjgl.Sys.loadLibrary(Sys.java:87) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at org.lwjgl.Sys.<clinit>(Sys.java:117) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at net.minecraft.client.Minecraft.getSystemTime(Minecraft.java:2821) ~[Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:79) ~[Main.class:?]
+Caused by: joptsimple.MissingRequiredOptionException: Missing required option(s) ['userProperties', 'accessToken']
+	at joptsimple.OptionParser.ensureRequiredOptions(OptionParser.java:447) ~[OptionParser.class:?]
+	at joptsimple.OptionParser.parse(OptionParser.java:437) ~[OptionParser.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:89) ~[Main.class:?]
 	... 6 more
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: cpw.mods.fml.relauncher.FMLSecurityManager$ExitTrappedException
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at cpw.mods.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:25)
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.SecurityManager.checkExit(Unknown Source)
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.Runtime.exit(Unknown Source)
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.System.exit(Unknown Source)
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
-[14:31:46] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: cpw.mods.fml.relauncher.FMLSecurityManager$ExitTrappedException
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:25)
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.SecurityManager.checkExit(SecurityManager.java:761)
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.Runtime.exit(Runtime.java:107)
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.System.exit(System.java:971)
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
+[03:55:10] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)

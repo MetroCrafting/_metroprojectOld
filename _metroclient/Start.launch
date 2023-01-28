@@ -12,11 +12,13 @@
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_341/"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraft.launchwrapper.Launch"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="_metroclient"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--tweakClass cpw.mods.fml.common.launcher.FMLTweaker --tweakClass optifine.OptiFineForgeTweaker"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-version {} --accessToken FML --userProperties {} --tweakClass cpw.mods.fml.common.launcher.FMLTweaker --tweakClass optifine.OptiFineForgeTweaker"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="_metroclient"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms1024M -Xmx2048M -Dfml.ignoreInvalidMinecraftCertificates=true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms1024M -Xmx1024M -Dfml.ignoreInvalidMinecraftCertificates=true"/>
     <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:_metroclient/run}"/>
 </launchConfiguration>
