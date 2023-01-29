@@ -5,6 +5,13 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import java.io.File;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import net.minecraft.client.gui.stream.GuiTwitchUserMode;
 import net.minecraft.event.ClickEvent;
 import net.minecraft.event.HoverEvent;
@@ -21,7 +28,6 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IChatComponent;
-import net.minecraftforge.common.MinecraftForge;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,14 +35,6 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import tv.twitch.chat.ChatUserInfo;
-
-import java.io.File;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
 @SideOnly(Side.CLIENT)
 public class GuiChat extends GuiScreen implements GuiYesNoCallback
@@ -58,7 +56,8 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     /** Chat entry field */
     protected GuiTextField inputField;
     /** is the text that appears when you press the chat key and the input box appears pre-filled */
-    public String defaultInputFieldText = "";
+    private String defaultInputFieldText = "";
+    private static final String __OBFID = "CL_00000682";
 
     public GuiChat() {}
 
@@ -74,7 +73,7 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     {
         Keyboard.enableRepeatEvents(true);
         this.sentHistoryCursor = this.mc.ingameGUI.getChatGUI().getSentMessages().size();
-        this.inputField = new GuiTextField(this.fontRendererObj, 4, this.height - 12, this.width - 4, 12);//если худа нет
+        this.inputField = new GuiTextField(this.fontRendererObj, 4, this.height - 12, this.width - 4, 12);
         this.inputField.setMaxStringLength(100);
         this.inputField.setEnableBackgroundDrawing(false);
         this.inputField.setFocused(true);
@@ -102,11 +101,11 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     /**
      * Fired when a key is typed. This is the equivalent of KeyListener.keyTyped(KeyEvent e).
      */
-    public void keyTyped(char character, int key)
+    protected void keyTyped(char p_73869_1_, int p_73869_2_)
     {
         this.field_146414_r = false;
 
-        if (key == 15)
+        if (p_73869_2_ == 15)
         {
             this.func_146404_p_();
         }
@@ -115,31 +114,31 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
             this.field_146417_i = false;
         }
 
-        if (key == 1)
+        if (p_73869_2_ == 1)
         {
             this.mc.displayGuiScreen((GuiScreen)null);
         }
-        else if (key != 28 && key != 156)
+        else if (p_73869_2_ != 28 && p_73869_2_ != 156)
         {
-            if (key == 200)
+            if (p_73869_2_ == 200)
             {
                 this.getSentHistory(-1);
             }
-            else if (key == 208)
+            else if (p_73869_2_ == 208)
             {
                 this.getSentHistory(1);
             }
-            else if (key == 201)
+            else if (p_73869_2_ == 201)
             {
                 this.mc.ingameGUI.getChatGUI().scroll(this.mc.ingameGUI.getChatGUI().func_146232_i() - 1);
             }
-            else if (key == 209)
+            else if (p_73869_2_ == 209)
             {
                 this.mc.ingameGUI.getChatGUI().scroll(-this.mc.ingameGUI.getChatGUI().func_146232_i() + 1);
             }
             else
             {
-                this.inputField.textboxKeyTyped(character, key);
+                this.inputField.textboxKeyTyped(p_73869_1_, p_73869_2_);
             }
         }
         else
@@ -158,7 +157,12 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     public void func_146403_a(String p_146403_1_)
     {
         this.mc.ingameGUI.getChatGUI().addToSentMessages(p_146403_1_);
-        if (net.minecraftforge.client.ClientCommandHandler.instance.executeCommand(mc.thePlayer, p_146403_1_) != 0) return;
+
+        if (net.minecraftforge.client.ClientCommandHandler.instance.executeCommand(mc.thePlayer, p_146403_1_) != 0)
+        {
+            return;
+        }
+
         this.mc.thePlayer.sendChatMessage(p_146403_1_);
     }
 
@@ -194,52 +198,80 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     /**
      * Called when the mouse is clicked.
      */
-    public void mouseClicked(int mouseX, int mouseY, int mouseButton) {
-        if (mouseButton == 0 && this.mc.gameSettings.chatLinks && mc.thePlayer.capabilities.isCreativeMode) {
+    protected void mouseClicked(int p_73864_1_, int p_73864_2_, int p_73864_3_)
+    {
+        if (p_73864_3_ == 0 && this.mc.gameSettings.chatLinks)
+        {
             IChatComponent ichatcomponent = this.mc.ingameGUI.getChatGUI().func_146236_a(Mouse.getX(), Mouse.getY());
 
-            if (ichatcomponent != null) {
+            if (ichatcomponent != null)
+            {
                 ClickEvent clickevent = ichatcomponent.getChatStyle().getChatClickEvent();
 
-                if (clickevent != null) {
-                    if (isShiftKeyDown()) {
+                if (clickevent != null)
+                {
+                    if (isShiftKeyDown())
+                    {
                         this.inputField.writeText(ichatcomponent.getUnformattedTextForChat());
-                    } else {
+                    }
+                    else
+                    {
                         URI uri;
 
-                        if (clickevent.getAction() == ClickEvent.Action.OPEN_URL) {
-                            try {
+                        if (clickevent.getAction() == ClickEvent.Action.OPEN_URL)
+                        {
+                            try
+                            {
                                 uri = new URI(clickevent.getValue());
 
-                                if (!field_152175_f.contains(uri.getScheme().toLowerCase())) {
+                                if (!field_152175_f.contains(uri.getScheme().toLowerCase()))
+                                {
                                     throw new URISyntaxException(clickevent.getValue(), "Unsupported protocol: " + uri.getScheme().toLowerCase());
                                 }
 
-                                if (this.mc.gameSettings.chatLinksPrompt) {
+                                if (this.mc.gameSettings.chatLinksPrompt)
+                                {
                                     this.clickedURI = uri;
                                     this.mc.displayGuiScreen(new GuiConfirmOpenLink(this, clickevent.getValue(), 0, false));
-                                } else {
+                                }
+                                else
+                                {
                                     this.func_146407_a(uri);
                                 }
-                            } catch (URISyntaxException urisyntaxexception) {
+                            }
+                            catch (URISyntaxException urisyntaxexception)
+                            {
                                 logger.error("Can\'t open url for " + clickevent, urisyntaxexception);
                             }
-                        } else if (clickevent.getAction() == ClickEvent.Action.OPEN_FILE) {
+                        }
+                        else if (clickevent.getAction() == ClickEvent.Action.OPEN_FILE)
+                        {
                             uri = (new File(clickevent.getValue())).toURI();
                             this.func_146407_a(uri);
-                        } else if (clickevent.getAction() == ClickEvent.Action.SUGGEST_COMMAND) {
+                        }
+                        else if (clickevent.getAction() == ClickEvent.Action.SUGGEST_COMMAND)
+                        {
                             this.inputField.setText(clickevent.getValue());
-                        } else if (clickevent.getAction() == ClickEvent.Action.RUN_COMMAND) {
+                        }
+                        else if (clickevent.getAction() == ClickEvent.Action.RUN_COMMAND)
+                        {
                             this.func_146403_a(clickevent.getValue());
-                        } else if (clickevent.getAction() == ClickEvent.Action.TWITCH_USER_INFO) {
+                        }
+                        else if (clickevent.getAction() == ClickEvent.Action.TWITCH_USER_INFO)
+                        {
                             ChatUserInfo chatuserinfo = this.mc.func_152346_Z().func_152926_a(clickevent.getValue());
 
-                            if (chatuserinfo != null) {
+                            if (chatuserinfo != null)
+                            {
                                 this.mc.displayGuiScreen(new GuiTwitchUserMode(this.mc.func_152346_Z(), chatuserinfo));
-                            } else {
+                            }
+                            else
+                            {
                                 logger.error("Tried to handle twitch user but couldn\'t find them!");
                             }
-                        } else {
+                        }
+                        else
+                        {
                             logger.error("Don\'t know how to handle " + clickevent);
                         }
                     }
@@ -249,8 +281,8 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
             }
         }
 
-        this.inputField.mouseClicked(mouseX, mouseY, mouseButton);
-        super.mouseClicked(mouseX, mouseY, mouseButton);
+        this.inputField.mouseClicked(p_73864_1_, p_73864_2_, p_73864_3_);
+        super.mouseClicked(p_73864_1_, p_73864_2_, p_73864_3_);
     }
 
     public void confirmClicked(boolean p_73878_1_, int p_73878_2_)
@@ -381,20 +413,13 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
         }
     }
 
-    public void renderChatInputField() {
-        this.inputField.drawTextBox();
-    }
-
     /**
      * Draws the screen and all the components in it.
      */
-    public void drawScreen(int mouseX, int mouseY, float partialTick)
+    public void drawScreen(int p_73863_1_, int p_73863_2_, float p_73863_3_)
     {
-        if(mc.thePlayer.capabilities.isCreativeMode) {
-            drawRect(2, this.height - 14, this.width - 2, this.height - 2, Integer.MIN_VALUE);//если худа нет
-            this.inputField.drawTextBox();
-        }
-
+        drawRect(2, this.height - 14, this.width - 2, this.height - 2, Integer.MIN_VALUE);
+        this.inputField.drawTextBox();
         IChatComponent ichatcomponent = this.mc.ingameGUI.getChatGUI().func_146236_a(Mouse.getX(), Mouse.getY());
 
         if (ichatcomponent != null && ichatcomponent.getChatStyle().getChatHoverEvent() != null)
@@ -421,16 +446,16 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
 
                 if (itemstack != null)
                 {
-                    this.renderToolTip(itemstack, mouseX, mouseY);
+                    this.renderToolTip(itemstack, p_73863_1_, p_73863_2_);
                 }
                 else
                 {
-                    this.drawCreativeTabHoveringText(EnumChatFormatting.RED + "Invalid Item!", mouseX, mouseY);
+                    this.drawCreativeTabHoveringText(EnumChatFormatting.RED + "Invalid Item!", p_73863_1_, p_73863_2_);
                 }
             }
             else if (hoverevent.getAction() == HoverEvent.Action.SHOW_TEXT)
             {
-                this.func_146283_a(Splitter.on("\n").splitToList(hoverevent.getValue().getFormattedText()), mouseX, mouseY);
+                this.func_146283_a(Splitter.on("\n").splitToList(hoverevent.getValue().getFormattedText()), p_73863_1_, p_73863_2_);
             }
             else if (hoverevent.getAction() == HoverEvent.Action.SHOW_ACHIEVEMENT)
             {
@@ -449,18 +474,18 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
                         arraylist.addAll(this.fontRendererObj.listFormattedStringToWidth(s, 150));
                     }
 
-                    this.func_146283_a(arraylist, mouseX, mouseY);
+                    this.func_146283_a(arraylist, p_73863_1_, p_73863_2_);
                 }
                 else
                 {
-                    this.drawCreativeTabHoveringText(EnumChatFormatting.RED + "Invalid statistic/achievement!", mouseX, mouseY);
+                    this.drawCreativeTabHoveringText(EnumChatFormatting.RED + "Invalid statistic/achievement!", p_73863_1_, p_73863_2_);
                 }
             }
 
             GL11.glDisable(GL11.GL_LIGHTING);
         }
 
-        super.drawScreen(mouseX, mouseY, partialTick);
+        super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);
     }
 
     public void func_146406_a(String[] p_146406_1_)
@@ -471,8 +496,8 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
             this.field_146412_t.clear();
             String[] astring1 = p_146406_1_;
             int i = p_146406_1_.length;
-
             String[] complete = net.minecraftforge.client.ClientCommandHandler.instance.latestAutoComplete;
+
             if (complete != null)
             {
                 astring1 = com.google.common.collect.ObjectArrays.concat(complete, astring1, String.class);
@@ -511,13 +536,5 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     public boolean doesGuiPauseGame()
     {
         return false;
-    }
-
-    public String getDefaultInputFieldText() {
-        return defaultInputFieldText;
-    }
-
-    public GuiTextField getInputField() {
-        return inputField;
     }
 }

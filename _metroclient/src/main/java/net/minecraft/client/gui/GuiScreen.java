@@ -71,7 +71,7 @@ public class GuiScreen extends Gui
     /**
      * Fired when a key is typed. This is the equivalent of KeyListener.keyTyped(KeyEvent e).
      */
-    public void keyTyped(char character, int key)
+    protected void keyTyped(char character, int key)
     {
         if (key == 1)
         {

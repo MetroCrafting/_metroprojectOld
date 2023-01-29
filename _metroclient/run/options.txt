@@ -1,9 +1,9 @@
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.75
-gamma:1.0
+gamma:0.0
 saturation:0.0
-renderDistance:8
+renderDistance:32
 guiScale:0
 particles:0
 bobView:true
@@ -11,9 +11,9 @@ anaglyph3d:false
 advancedOpengl:true
 maxFps:260
 fboEnable:true
-difficulty:3
-fancyGraphics:false
-ao:2
+difficulty:0
+fancyGraphics:true
+ao:0
 clouds:true
 resourcePacks:[]
 lastServer:
@@ -23,11 +23,11 @@ chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
-snooperEnabled:true
+snooperEnabled:false
 fullscreen:false
 enableVsync:false
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 showCape:true
 touchscreen:false
@@ -37,7 +37,7 @@ heldItemTooltips:true
 chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
-chatWidth:1.0
+chatWidth:0.5633803
 showInventoryAchievementHint:false
 mipmapLevels:4
 anisotropicFiltering:1

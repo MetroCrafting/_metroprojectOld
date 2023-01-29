@@ -210,19 +210,19 @@ public class EntityRenderer implements IResourceManagerReloadListener
     private ShaderGroup[] fxaaShaders = new ShaderGroup[10];
     public int frameCount;
 
-    public EntityRenderer(Minecraft p_i45076_1_, IResourceManager p_i45076_2_)
+    public EntityRenderer(Minecraft getMinecraft, IResourceManager resourceManager)
     {
         this.shaderIndex = shaderCount;
         this.cameraZoom = 1.0D;
         this.prevFrameTime = Minecraft.getSystemTime();
         this.random = new Random();
         this.fogColorBuffer = GLAllocation.createDirectFloatBuffer(16);
-        this.mc = p_i45076_1_;
-        this.resourceManager = p_i45076_2_;
-        this.theMapItemRenderer = new MapItemRenderer(p_i45076_1_.getTextureManager());
-        this.itemRenderer = new ItemRenderer(p_i45076_1_);
+        this.mc = getMinecraft;
+        this.resourceManager = resourceManager;
+        this.theMapItemRenderer = new MapItemRenderer(getMinecraft.getTextureManager());
+        this.itemRenderer = new ItemRenderer(getMinecraft);
         this.lightmapTexture = new DynamicTexture(16, 16);
-        this.locationLightMap = p_i45076_1_.getTextureManager().getDynamicTextureLocation("lightMap", this.lightmapTexture);
+        this.locationLightMap = getMinecraft.getTextureManager().getDynamicTextureLocation("lightMap", this.lightmapTexture);
         this.lightmapColors = this.lightmapTexture.getTextureData();
         this.theShaderGroup = null;
     }
