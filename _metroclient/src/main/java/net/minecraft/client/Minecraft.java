@@ -186,7 +186,7 @@ public class Minecraft implements IPlayerUsage
     public static byte[] memoryReserve = new byte[10485760];
     private static final List macDisplayModes = Lists.newArrayList(new DisplayMode[] {new DisplayMode(2560, 1600), new DisplayMode(2880, 1800)});
     private final File fileResourcepacks;
-    private final Multimap field_152356_J;
+    private final Multimap versionType;
     private ServerData currentServerData;
     /** The RenderEngine instance used by Minecraft */
     public TextureManager renderEngine;
@@ -282,7 +282,7 @@ public class Minecraft implements IPlayerUsage
     private SoundHandler mcSoundHandler;
     private MusicTicker mcMusicTicker;
     private ResourceLocation field_152354_ay;
-    private final MinecraftSessionService field_152355_az;
+    private final MinecraftSessionService sessionType;
     private SkinManager field_152350_aA;
     private final Queue field_152351_aB = Queues.newArrayDeque();
     private final Thread field_152352_aC = Thread.currentThread();
@@ -306,11 +306,11 @@ public class Minecraft implements IPlayerUsage
         this.fileAssets = p_i1103_7_;
         this.fileResourcepacks = p_i1103_8_;
         this.launchedVersion = p_i1103_10_;
-        this.field_152356_J = p_i1103_11_;
-        this.mcDefaultResourcePack = new DefaultResourcePack((new ResourceIndex(p_i1103_7_, p_i1103_12_)).func_152782_a());
+        this.versionType = p_i1103_11_;
+        this.mcDefaultResourcePack = new DefaultResourcePack((new ResourceIndex(p_i1103_7_, p_i1103_12_)).getPackMcmeta());
         this.addDefaultResourcePack();
         this.proxy = p_i1103_9_ == null ? Proxy.NO_PROXY : p_i1103_9_;
-        this.field_152355_az = (new YggdrasilAuthenticationService(p_i1103_9_, UUID.randomUUID().toString())).createMinecraftSessionService();
+        this.sessionType = (new YggdrasilAuthenticationService(p_i1103_9_, UUID.randomUUID().toString())).createMinecraftSessionService();
         this.startTimerHackThread();
         this.session = p_i1103_1_;
         logger.info("Setting user: " + p_i1103_1_.getUsername());
@@ -322,10 +322,10 @@ public class Minecraft implements IPlayerUsage
         this.fullscreen = p_i1103_4_;
         this.jvm64bit = isJvm64bit();
         ImageIO.setUseCache(false);
-        Bootstrap.func_151354_b();
+        Bootstrap.register();
         DiscordPresence.Init();
     }
-
+    
     private static boolean isJvm64bit()
     {
         String[] astring = new String[] {"sun.arch.data.model", "com.ibm.vm.bitmode", "os.arch"};
@@ -458,12 +458,12 @@ public class Minecraft implements IPlayerUsage
         {
             try
             {
-                InputStream inputstream = this.mcDefaultResourcePack.func_152780_c(new ResourceLocation("icons/icon_16x16.png"));
-                InputStream inputstream1 = this.mcDefaultResourcePack.func_152780_c(new ResourceLocation("icons/icon_32x32.png"));
+                InputStream inputstream = this.mcDefaultResourcePack.getInputStream(new ResourceLocation("icons/icon_16x16.png"));
+                InputStream inputstream1 = this.mcDefaultResourcePack.getInputStream(new ResourceLocation("icons/icon_32x32.png"));
 
                 if (inputstream != null && inputstream1 != null)
                 {
-                    Display.setIcon(new ByteBuffer[] {this.func_152340_a(inputstream), this.func_152340_a(inputstream1)});
+                    Display.setIcon(new ByteBuffer[] {this.readIconImage(inputstream), this.readIconImage(inputstream1)});
                 }
             }
             catch (IOException ioexception)
@@ -471,7 +471,7 @@ public class Minecraft implements IPlayerUsage
                 logger.error("Couldn\'t set icon", ioexception);
             }
         }
-
+        
         try
         {
             net.minecraftforge.client.ForgeHooksClient.createDisplay();
@@ -501,7 +501,7 @@ public class Minecraft implements IPlayerUsage
 
         try
         {
-            this.field_152353_at = new TwitchStream(this, (String)Iterables.getFirst(this.field_152356_J.get("twitch_access_token"), (Object)null));
+            this.field_152353_at = new TwitchStream(this, (String)Iterables.getFirst(this.versionType.get("twitch_access_token"), (Object)null));
         }
         catch (Throwable throwable)
         {
@@ -525,7 +525,7 @@ public class Minecraft implements IPlayerUsage
         FMLClientHandler.instance().beginMinecraftLoading(this, this.defaultResourcePacks, this.mcResourceManager);
         this.renderEngine = new TextureManager(this.mcResourceManager);
         this.mcResourceManager.registerReloadListener(this.renderEngine);
-        this.field_152350_aA = new SkinManager(this.renderEngine, new File(this.fileAssets, "skins"), this.field_152355_az);
+        this.field_152350_aA = new SkinManager(this.renderEngine, new File(this.fileAssets, "skins"), this.sessionType);
         cpw.mods.fml.client.SplashProgress.drawVanillaScreen();
         this.mcSoundHandler = new SoundHandler(this.mcResourceManager, this.gameSettings);
         this.mcResourceManager.registerReloadListener(this.mcSoundHandler);
@@ -680,7 +680,7 @@ public class Minecraft implements IPlayerUsage
         this.defaultResourcePacks.add(this.mcDefaultResourcePack);
     }
 
-    private ByteBuffer func_152340_a(InputStream p_152340_1_) throws IOException
+    private ByteBuffer readIconImage(InputStream p_152340_1_) throws IOException
     {
         BufferedImage bufferedimage = ImageIO.read(p_152340_1_);
         int[] aint = bufferedimage.getRGB(0, 0, bufferedimage.getWidth(), bufferedimage.getHeight(), (int[])null, 0, bufferedimage.getWidth());
@@ -2836,7 +2836,7 @@ public class Minecraft implements IPlayerUsage
 
     public Multimap func_152341_N()
     {
-        return this.field_152356_J;
+        return this.versionType;
     }
 
     public Proxy getProxy()
@@ -3021,7 +3021,7 @@ public class Minecraft implements IPlayerUsage
 
     public MinecraftSessionService func_152347_ac()
     {
-        return this.field_152355_az;
+        return this.sessionType;
     }
 
     public SkinManager func_152342_ad()

@@ -1414,7 +1414,7 @@ public abstract class MinecraftServer implements ICommandSender, Runnable, IPlay
     @SideOnly(Side.SERVER)
     public static void main(String[] p_main_0_)
     {
-        Bootstrap.func_151354_b();
+        Bootstrap.register();
 
         try
         {

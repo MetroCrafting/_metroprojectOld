@@ -449,7 +449,7 @@ public class Bootstrap
         });
     }
 
-    public static void func_151354_b()
+    public static void register()
     {
         if (!field_151355_a)
         {

@@ -48,6 +48,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.WorldServer;
+
+import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.LWJGLException;
@@ -1577,71 +1579,88 @@ public class Config {
             return s == null ? "" : s;
       }
 
-      public static void checkDisplaySettings() {
-            int samples = getAntialiasingLevel();
-            if (samples > 0) {
-                  DisplayMode displayMode = Display.getDisplayMode();
-                  dbg("FSAA Samples: " + samples);
+    public static void checkDisplaySettings()
+    {
+        int samples = getAntialiasingLevel();
 
-                  try {
-                        Display.destroy();
+        if (samples > 0)
+        {
+            DisplayMode displayMode = Display.getDisplayMode();
+            dbg("FSAA Samples: " + samples);
+
+            try
+            {
+                Display.destroy();
+                Display.setDisplayMode(displayMode);
+                Display.create((new PixelFormat()).withDepthBits(24).withSamples(samples));
+                Display.setResizable(false);
+                Display.setResizable(true);
+            }
+            catch (LWJGLException var9)
+            {
+                warn("Error setting FSAA: " + samples + "x");
+                var9.printStackTrace();
+
+                try
+                {
+                    Display.setDisplayMode(displayMode);
+                    Display.create((new PixelFormat()).withDepthBits(24));
+                    Display.setResizable(false);
+                    Display.setResizable(true);
+                }
+                catch (LWJGLException var8)
+                {
+                    var8.printStackTrace();
+
+                    try
+                    {
                         Display.setDisplayMode(displayMode);
-                        Display.create((new PixelFormat()).withDepthBits(24).withSamples(samples));
+                        Display.create();
                         Display.setResizable(false);
                         Display.setResizable(true);
-                  } catch (LWJGLException var9) {
-                        warn("Error setting FSAA: " + samples + "x");
-                        var9.printStackTrace();
-
-                        try {
-                              Display.setDisplayMode(displayMode);
-                              Display.create((new PixelFormat()).withDepthBits(24));
-                              Display.setResizable(false);
-                              Display.setResizable(true);
-                        } catch (LWJGLException var8) {
-                              var8.printStackTrace();
-
-                              try {
-                                    Display.setDisplayMode(displayMode);
-                                    Display.create();
-                                    Display.setResizable(false);
-                                    Display.setResizable(true);
-                              } catch (LWJGLException var7) {
-                                    var7.printStackTrace();
-                              }
-                        }
-                  }
-
-                  if (Util.getOSType() != EnumOS.OSX) {
-                        try {
-                              File assetsDir = new File(minecraft.mcDataDir, "assets");
-                              ByteBuffer bufIcon16 = readIconImage(new File(assetsDir, "/icons/icon_16x16.png"));
-                              ByteBuffer bufIcon32 = readIconImage(new File(assetsDir, "/icons/icon_32x32.png"));
-                              ByteBuffer[] buf = new ByteBuffer[]{bufIcon16, bufIcon32};
-                              Display.setIcon(buf);
-                        } catch (IOException var6) {
-                              warn(var6.getClass().getName() + ": " + var6.getMessage());
-                        }
-                  }
+                    }
+                    catch (LWJGLException var7)
+                    {
+                        var7.printStackTrace();
+                    }
+                }
             }
 
-      }
-
-      private static ByteBuffer readIconImage(File par1File) throws IOException {
-            BufferedImage var2 = ImageIO.read(par1File);
-            int[] var3 = var2.getRGB(0, 0, var2.getWidth(), var2.getHeight(), (int[])null, 0, var2.getWidth());
-            ByteBuffer var4 = ByteBuffer.allocate(4 * var3.length);
-            int[] var5 = var3;
-            int var6 = var3.length;
-
-            for(int var7 = 0; var7 < var6; ++var7) {
-                  int var8 = var5[var7];
-                  var4.putInt(var8 << 8 | var8 >> 24 & 255);
+            if (Util.getOSType() != Util.EnumOS.OSX)
+            {
+                try
+                {
+                    File e = new File(minecraft.mcDataDir, "assets");
+                    ByteBuffer bufIcon16 = readIconImage(new File(e, "/icons/icon_16x16.png"));
+                    ByteBuffer bufIcon32 = readIconImage(new File(e, "/icons/icon_32x32.png"));
+                    ByteBuffer[] buf = new ByteBuffer[] {bufIcon16, bufIcon32};
+                    Display.setIcon(buf);
+                }
+                catch (IOException var6)
+                {
+                    warn(var6.getClass().getName() + ": " + var6.getMessage());
+                }
             }
+        }
+    }
 
-            var4.flip();
-            return var4;
-      }
+    private static ByteBuffer readIconImage(File par1File) throws IOException
+    {
+        BufferedImage var2 = ImageIO.read(par1File);
+        int[] var3 = var2.getRGB(0, 0, var2.getWidth(), var2.getHeight(), (int[])null, 0, var2.getWidth());
+        ByteBuffer var4 = ByteBuffer.allocate(4 * var3.length);
+        int[] var5 = var3;
+        int var6 = var3.length;
+
+        for (int var7 = 0; var7 < var6; ++var7)
+        {
+            int var8 = var5[var7];
+            var4.putInt(var8 << 8 | var8 >> 24 & 255);
+        }
+
+        var4.flip();
+        return var4;
+    }
 
       public static void checkDisplayMode() {
             try {

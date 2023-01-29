@@ -19,7 +19,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 public class DefaultResourcePack implements IResourcePack
 {
-    public static final Set defaultResourceDomains = ImmutableSet.of("minecraft", "realms");
+    public static final Set DEFAULT_RESOURCE_DOMAINS = ImmutableSet.of("minecraft", "realms");
     private final Map resources;
     private static final String __OBFID = "CL_00001073";
 
@@ -38,7 +38,7 @@ public class DefaultResourcePack implements IResourcePack
         }
         else
         {
-            InputStream inputstream1 = this.func_152780_c(p_110590_1_);
+            InputStream inputstream1 = this.getInputStreamAssets(p_110590_1_);
 
             if (inputstream1 != null)
             {
@@ -51,7 +51,7 @@ public class DefaultResourcePack implements IResourcePack
         }
     }
 
-    public InputStream func_152780_c(ResourceLocation p_152780_1_) throws IOException
+    public InputStream getInputStreamAssets(ResourceLocation p_152780_1_) throws IOException
     {
         File file1 = (File)this.resources.get(p_152780_1_.toString()); // field_152781_b is this.resources
         return file1 != null && file1.isFile() ? new FileInputStream(file1) : null;
@@ -68,7 +68,7 @@ public class DefaultResourcePack implements IResourcePack
 
     public Set getResourceDomains() 
     {
-        return defaultResourceDomains;
+        return DEFAULT_RESOURCE_DOMAINS;
     }
 
     public IMetadataSection getPackMetadata(IMetadataSerializer par1MetadataSerializer, String par2Str) throws IOException {

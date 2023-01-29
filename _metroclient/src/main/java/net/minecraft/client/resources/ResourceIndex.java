@@ -23,7 +23,7 @@ import org.apache.logging.log4j.Logger;
 public class ResourceIndex
 {
     private static final Logger field_152783_a = LogManager.getLogger();
-    private final Map field_152784_b = Maps.newHashMap();
+    private final Map resourceMap = Maps.newHashMap();
     private static final String __OBFID = "CL_00001831";
 
     public ResourceIndex(File p_i1047_1_, String p_i1047_2_)
@@ -53,7 +53,7 @@ public class ResourceIndex
                         String s2 = astring.length == 1 ? astring[0] : astring[0] + ":" + astring[1];
                         String s3 = JsonUtils.getString(jsonobject2, "hash");
                         File file4 = new File(file2, s3.substring(0, 2) + "/" + s3);
-                        this.field_152784_b.put(s2, file4);
+                        this.resourceMap.put(s2, file4);
                     }
                 }
             }
@@ -72,8 +72,8 @@ public class ResourceIndex
         }
     }
 
-    public Map func_152782_a()
+    public Map getPackMcmeta()
     {
-        return this.field_152784_b;
+        return this.resourceMap;
     }
 }
