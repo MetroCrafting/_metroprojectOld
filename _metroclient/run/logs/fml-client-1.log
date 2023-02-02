@@ -1,93 +1,1267 @@
-[14:27:13] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
-[14:27:13] [main/INFO] [FML/]: Loading Modificated FML for Metro Project.
-[14:27:13] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_341, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_341
-[14:27:13] [main/DEBUG] [FML/]: Java classpath at launch is D:\_metroproject\_metroproject\_metroclient\bin\main;D:\_metroproject\_metroproject\_metroclient\bin\default;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1-sources.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\guava\guava\17.0\guava-17.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\netty\1.6\netty-1.6.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\realms\1.3.5\realms-1.3.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\io\netty\netty-all\4.0.10.Final\netty-all-4.0.10.Final.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-jpms-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4\lwjgl-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl-platform\2.9.4\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4\lwjgl_util-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\ow2\asm\asm-all\5.0.3\asm-debug-all-5.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\scala-actors.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch\5.16\twitch-5.16.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-external-platform\4.5\twitch-external-platform-4.5-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-platform\5.16\twitch-platform-5.16-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\vecmath-1.5.2.jar
-[14:27:13] [main/DEBUG] [FML/]: Java library path at launch is C:\Program Files\Java\jre1.8.0_341\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-17.0.5/bin/server;C:/Program Files/Java/jdk-17.0.5/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WorldPainter;C:\Program Files (x86)\Shell;C:\Program Files\Java\jdk1.8.0_341;C:\Gradle\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\edwar\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\edwar\AppData\Local\Programs\Python\Python310\;C:\Users\edwar\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Shell;C:\Program Files\Java\jdk1.8.0_341;C:\Gradle\bin;C:\Windows\apktool;C:\Users\edwar\AppData\Local\GitHubDesktop\bin;C:\Users\edwar\.dotnet\tools;;C:\WINDOWS\system32;;.
-[14:27:13] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[14:27:13] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
-[14:27:13] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
-[14:27:13] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
-[14:27:13] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
-[14:27:13] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
-[14:27:13] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
-[14:27:13] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
-[14:27:13] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to D:\_metroproject\_metroproject\_metroclient\run\.
-[14:27:13] [main/DEBUG] [FML/]: Discovering coremods
-[14:27:13] [main/INFO] [LaunchWrapper/]: Calling tweak class optifine.OptiFineForgeTweaker
-[14:27:13] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: acceptOptions
-[14:27:13] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: injectIntoClassLoader
-[14:27:13] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: OptiFine ClassTransformer
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: java.io.FileNotFoundException: D:\_metroproject\_metroproject\_metroclient\bin\main (Отказано в доступе)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.open(Native Method)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at optifine.OptiFineClassTransformer.<init>(OptiFineClassTransformer.java:29)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.Class.newInstance(Unknown Source)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.LaunchClassLoader.registerTransformer(LaunchClassLoader.java:88)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at optifine.OptiFineForgeTweaker.injectIntoClassLoader(OptiFineForgeTweaker.java:18)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115)
-[14:27:13] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
-[14:27:13] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: *** Can not find the OptiFine JAR in the classpath ***
-[14:27:13] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: *** OptiFine will not be loaded! ***
-[14:27:13] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[14:27:13] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[14:27:13] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[14:27:13] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[14:27:13] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[14:27:13] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
-[14:27:13] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
-[14:27:13] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
-[14:27:13] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
-[14:27:13] [main/DEBUG] [FML/]: Injection complete
-[14:27:13] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
-[14:27:13] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
-[14:27:14] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[14:27:17] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
-[14:27:17] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[14:27:17] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
-[14:27:17] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
-[14:27:17] [main/DEBUG] [FML/]: Injection complete
-[14:27:17] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
-[14:27:17] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
-[14:27:17] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
-[14:27:17] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[14:27:17] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
-[14:27:17] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
-[14:27:17] [main/DEBUG] [FML/]: Validating minecraft
-[14:27:19] [main/DEBUG] [FML/]: Minecraft validated, launching...
-[14:27:19] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
-[14:27:19] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
-[14:27:19] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: getLaunchArguments
-[14:27:19] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[14:27:20] [main/ERROR] [LaunchWrapper/]: Unable to launch
-java.lang.reflect.InvocationTargetException
+[15:51:49] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[15:51:49] [main/INFO] [FML/]: Loading Modificated FML for Metro Project.
+[15:51:49] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_341, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_341
+[15:51:49] [main/DEBUG] [FML/]: Java classpath at launch is D:\_metroproject\_metroproject\_metroclient\bin\main;D:\_metroproject\_metroproject\_metroclient\bin\default;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1-sources.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\google\guava\guava\17.0\guava-17.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\netty\1.6\netty-1.6.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\realms\1.3.5\realms-1.3.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\_metroproject\_metroproject\_metroclient\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\io\netty\netty-all\4.0.10.Final\netty-all-4.0.10.Final.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\jna-jpms-5.12.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4\lwjgl-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl-platform\2.9.4\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4\lwjgl_util-2.9.4-nightly-20150209.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\ow2\asm\asm-all\5.0.3\asm-debug-all-5.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\scala-actors.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch\5.16\twitch-5.16.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-external-platform\4.5\twitch-external-platform-4.5-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-platform\5.16\twitch-platform-5.16-natives-windows-64.jar;D:\_metroproject\_metroproject\_metroclient\libraries\vecmath-1.5.2.jar
+[15:51:49] [main/DEBUG] [FML/]: Java library path at launch is D:\_metroproject\_metroproject\_metroclient\native
+[15:51:49] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[15:51:49] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[15:51:49] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[15:51:50] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[15:51:50] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[15:51:50] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
+[15:51:50] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[15:51:50] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[15:51:50] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to D:\_metroproject\_metroproject\_metroclient\run\.
+[15:51:50] [main/DEBUG] [FML/]: Discovering coremods
+[15:51:50] [main/INFO] [LaunchWrapper/]: Calling tweak class optifine.OptiFineForgeTweaker
+[15:51:50] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: acceptOptions
+[15:51:50] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: injectIntoClassLoader
+[15:51:50] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: OptiFine ClassTransformer
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: java.io.FileNotFoundException: D:\_metroproject\_metroproject\_metroclient\bin\main (Отказано в доступе)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.open(Native Method)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.util.zip.ZipFile.<init>(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at optifine.OptiFineClassTransformer.<init>(OptiFineClassTransformer.java:29)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.Class.newInstance(Unknown Source)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.LaunchClassLoader.registerTransformer(LaunchClassLoader.java:88)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at optifine.OptiFineForgeTweaker.injectIntoClassLoader(OptiFineForgeTweaker.java:18)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115)
+[15:51:50] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[15:51:50] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: *** Can not find the OptiFine JAR in the classpath ***
+[15:51:50] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:142]: *** OptiFine will not be loaded! ***
+[15:51:50] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:51:50] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[15:51:50] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:51:50] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:51:50] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:51:50] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
+[15:51:50] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+[15:51:50] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+[15:51:50] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+[15:51:50] [main/DEBUG] [FML/]: Injection complete
+[15:51:50] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
+[15:51:50] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[15:51:50] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[15:51:52] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[15:51:52] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:51:52] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[15:51:52] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
+[15:51:52] [main/DEBUG] [FML/]: Injection complete
+[15:51:52] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[15:51:52] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[15:51:52] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[15:51:52] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[15:51:52] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
+[15:51:52] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
+[15:51:52] [main/DEBUG] [FML/]: Validating minecraft
+[15:51:53] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[15:51:53] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[15:51:53] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[15:51:53] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:33]: OptiFineForgeTweaker: getLaunchArguments
+[15:51:53] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] ShadersMod version: 2.4.12
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] OpenGL Version: 4.5.13417 Compatibility Profile Context 15.301.1901.0
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] Vendor:  ATI Technologies Inc.
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] Renderer: AMD Mobility Radeon HD 5000 Series
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 18
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] Load ShadersMod configuration.
+[15:51:59] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] Loaded shaderpack: (internal)
+[15:51:59] [Discord RPC Callback Handler/INFO] [STDOUT/]: [ua.apulaz.discord.DiscordPresence:lambda$0:13]: Has started.
+[15:51:59] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0,061s
+[15:51:59] [Client thread/INFO] [STDOUT/]: [cpw.mods.fml.client.SplashProgress:start:188]: ---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 02.02.23 15:51
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_341, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 890042840 bytes (848 MB) / 1029177344 bytes (981 MB) up to 1029177344 bytes (981 MB)
+	JVM Flags: 2 total; -Xms1024M -Xmx1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.5.13417 Compatibility Profile Context 15.301.1901.0' Renderer: 'AMD Mobility Radeon HD 5000 Series'
+[15:52:00] [Client thread/INFO] [MinecraftForge/]: Attempting early MinecraftForge initialization
+[15:52:00] [Client thread/INFO] [FML/]: MinecraftForge v10.13.4.1614 Initialized
+[15:52:00] [Client thread/INFO] [FML/]: Replaced 183 ore recipies
+[15:52:00] [Client thread/INFO] [MinecraftForge/]: Completed early MinecraftForge initialization
+[15:52:00] [Client thread/DEBUG] [FML/]: File D:\_metroproject\_metroproject\_metroclient\run\config\injectedDependencies.json not found. No dependencies injected
+[15:52:00] [Client thread/DEBUG] [FML/]: Building injected Mod Containers [cpw.mods.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[15:52:00] [Client thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at D:\_metroproject\_metroproject\_metroclient\bin\main, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at D:\_metroproject\_metroproject\_metroclient\bin\default, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1-sources.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\findbugs\jsr305-3.0.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\google\guava\guava\17.0\guava-17.0.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\netty\1.6\netty-1.6.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\mojang\realms\1.3.5\realms-1.3.5.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\io\netty\netty-all\4.0.10.Final\netty-all-4.0.10.Final.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\jna-5.12.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\jna-jpms-5.12.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jinput\jinput-platform\2.0.5\jinput-platform-2.0.5-natives-windows.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4\lwjgl-2.9.4-nightly-20150209.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl-platform\2.9.4\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4\lwjgl_util-2.9.4-nightly-20150209.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\ow2\asm\asm-all\5.0.3\asm-debug-all-5.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-actors-migration_2.11\scala-actors.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch\5.16\twitch-5.16.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-external-platform\4.5\twitch-external-platform-4.5-natives-windows-64.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\tv\twitch\twitch-platform\5.16\twitch-platform-5.16-natives-windows-64.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Found a minecraft related file at D:\_metroproject\_metroproject\_metroclient\libraries\vecmath-1.5.2.jar, examining for mod candidates
+[15:52:00] [Client thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[15:52:00] [Client thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[15:52:00] [Client thread/INFO] [FML/]: Searching D:\_metroproject\_metroproject\_metroclient\run\mods for mods
+[15:52:00] [Client thread/DEBUG] [FML/]: Examining directory main for potential mods
+[15:52:00] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory main
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets.fml
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets.fml.lang
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets.fml.textures
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets.fml.textures.gui
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets.forge
+[15:52:00] [Client thread/TRACE] [FML/]: Recursing into package assets.forge.lang
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.font
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.icons
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.lang
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.0_glass_white
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.10_glass_purple
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.11_glass_blue
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.12_glass_brown
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.13_glass_green
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.14_glass_red
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.15_glass_black
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.1_glass_orange
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.2_glass_magenta
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.3_glass_light_blue
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.4_glass_yellow
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.5_glass_lime
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.6_glass_pink
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.7_glass_gray
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.8_glass_silver
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.9_glass_cyan
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.bedrock
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.mcpatcher.ctm.default.concente_a
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.optifine
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.optifine.lang
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.shaders
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.shaders.post
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.shaders.program
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.ambient
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.ambient.cave
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.ambient.weather
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.damage
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.dig
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.fire
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.fireworks
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.liquid
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.minecart
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.bat
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.blaze
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.cat
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.chicken
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.cow
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.creeper
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.enderdragon
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.endermen
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.ghast
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.horse
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.horse.donkey
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.horse.skeleton
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.horse.zombie
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.irongolem
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.magmacube
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.pig
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.sheep
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.silverfish
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.skeleton
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.slime
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.spider
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.villager
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.wither
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.wolf
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.zombie
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.mob.zombiepig
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.music
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.music.game
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.music.game.creative
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.music.game.end
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.music.game.nether
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.music.menu
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.note
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.portal
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.random
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.records
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.step
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.tile
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.sounds.tile.piston
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.texts
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.blocks
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.colormap
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.effect
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.cat
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.chest
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.cow
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.creeper
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.endercrystal
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.enderdragon
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.enderman
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.ghast
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.horse
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.horse.armor
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.pig
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.sheep
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.skeleton
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.slime
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.spider
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.villager
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.wither
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.wolf
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.entity.zombie
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.environment
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.font
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.gui
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.gui.achievement
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.gui.container
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.gui.container.creative_inventory
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.gui.title
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.gui.title.background
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.items
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.map
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.misc
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.models
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.models.armor
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.painting
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.minecraft.textures.particle
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.realms
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package assets.realms.lang
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package club
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package club.minnced
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package club.minnced.discord
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package club.minnced.discord.rpc
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package cpw
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.client
+[15:52:01] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.client.config
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.client.event
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.client.registry
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.asm
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.asm.transformers
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.asm.transformers.deobf
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.discovery
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.discovery.asm
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.event
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.eventhandler
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.functions
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.gameevent
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.launcher
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.network
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.network.handshake
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.network.internal
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.network.simpleimpl
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.patcher
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.registry
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.toposort
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.common.versioning
+[15:52:02] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.relauncher
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.repackage
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.repackage.com
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.repackage.com.nothome
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.repackage.com.nothome.delta
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package cpw.mods.fml.server
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package darwin
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package ibxm
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package linux-x86-64
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.block
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.block.material
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.audio
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.entity
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.gui
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.gui.achievement
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.gui.inventory
+[15:52:03] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.gui.stream
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.main
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.model
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.multiplayer
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.network
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.particle
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.renderer
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.renderer.culling
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.renderer.entity
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.renderer.texture
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.renderer.tileentity
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.resources
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.resources.data
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.settings
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.shader
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.stream
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.client.util
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.command
+[15:52:04] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.command.server
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.crash
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.creativetab
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.dispenser
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.enchantment
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.ai
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.ai.attributes
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.boss
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.effect
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.item
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.monster
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.passive
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.player
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.entity.projectile
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.event
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.init
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.inventory
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.item
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.item.crafting
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.nbt
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.handshake
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.handshake.client
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.login
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.login.client
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.login.server
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.play
+[15:52:05] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.play.client
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.play.server
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.rcon
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.status
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.status.client
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.network.status.server
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.pathfinding
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.potion
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.profiler
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.realms
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.scoreboard
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.server
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.server.dedicated
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.server.gui
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.server.integrated
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.server.management
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.server.network
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.src
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.stats
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.tileentity
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.util
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.village
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.biome
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.chunk
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.chunk.storage
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.demo
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.gen
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.gen.feature
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.gen.layer
+[15:52:06] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.gen.structure
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraft.world.storage
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.classloading
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client.event
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client.event.sound
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client.gui
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client.model
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client.model.obj
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.client.model.techne
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.common
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.common.chunkio
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.common.config
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.common.network
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.common.util
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.brewing
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.entity
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.entity.item
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.entity.living
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.entity.minecart
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.entity.player
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.terraingen
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.event.world
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.fluids
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.oredict
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.server
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.server.command
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.transformers
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.optifine
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.optifine.entity
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.optifine.entity.model
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package net.optifine.entity.model.anim
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package optifine
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package optifine.json
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package optifine.xdelta
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package paulscode
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package paulscode.sound
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package paulscode.sound.codecs
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package shadersmod
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package shadersmod.client
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package shadersmod.common
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package shadersmod.uniform
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package ua
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package ua.apulaz
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package ua.apulaz.discord
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package win32-x86
+[15:52:07] [Client thread/TRACE] [FML/]: Recursing into package win32-x86-64
+[15:52:07] [Client thread/DEBUG] [FML/]: Examining directory default for potential mods
+[15:52:07] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory default
+[15:52:07] [Client thread/DEBUG] [FML/]: Examining file jsr305-3.0.1-sources.jar for potential mods
+[15:52:07] [Client thread/DEBUG] [FML/]: The mod container jsr305-3.0.1-sources.jar appears to be missing an mcmod.info file
+[15:52:07] [Client thread/DEBUG] [FML/]: Examining file jsr305-3.0.1.jar for potential mods
+[15:52:07] [Client thread/DEBUG] [FML/]: The mod container jsr305-3.0.1.jar appears to be missing an mcmod.info file
+[15:52:07] [Client thread/DEBUG] [FML/]: Examining file gson-2.2.4.jar for potential mods
+[15:52:07] [Client thread/DEBUG] [FML/]: The mod container gson-2.2.4.jar appears to be missing an mcmod.info file
+[15:52:07] [Client thread/DEBUG] [FML/]: Examining file guava-17.0.jar for potential mods
+[15:52:07] [Client thread/DEBUG] [FML/]: The mod container guava-17.0.jar appears to be missing an mcmod.info file
+[15:52:08] [Client thread/DEBUG] [FML/]: Examining file icu4j-core-mojang-51.2.jar for potential mods
+[15:52:08] [Client thread/DEBUG] [FML/]: The mod container icu4j-core-mojang-51.2.jar appears to be missing an mcmod.info file
+[15:52:08] [Client thread/DEBUG] [FML/]: Examining file authlib-1.5.21.jar for potential mods
+[15:52:08] [Client thread/DEBUG] [FML/]: The mod container authlib-1.5.21.jar appears to be missing an mcmod.info file
+[15:52:08] [Client thread/DEBUG] [FML/]: Examining file netty-1.6.jar for potential mods
+[15:52:08] [Client thread/DEBUG] [FML/]: The mod container netty-1.6.jar appears to be missing an mcmod.info file
+[15:52:08] [Client thread/DEBUG] [FML/]: Examining file realms-1.3.5.jar for potential mods
+[15:52:08] [Client thread/DEBUG] [FML/]: The mod container realms-1.3.5.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file codecjorbis-20101023.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container codecjorbis-20101023.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file codecwav-20101023.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container codecwav-20101023.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file libraryjavasound-20101123.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file librarylwjglopenal-20100824.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container librarylwjglopenal-20100824.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file soundsystem-20120107.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container soundsystem-20120107.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file akka-actor_2.11-2.3.3.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container akka-actor_2.11-2.3.3.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file config-1.2.1.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container config-1.2.1.jar appears to be missing an mcmod.info file
+[15:52:09] [Client thread/DEBUG] [FML/]: Examining file commons-codec-1.9.jar for potential mods
+[15:52:09] [Client thread/DEBUG] [FML/]: The mod container commons-codec-1.9.jar appears to be missing an mcmod.info file
+[15:52:10] [Client thread/DEBUG] [FML/]: Examining file commons-io-2.4.jar for potential mods
+[15:52:10] [Client thread/DEBUG] [FML/]: The mod container commons-io-2.4.jar appears to be missing an mcmod.info file
+[15:52:10] [Client thread/DEBUG] [FML/]: Examining file commons-logging-1.1.3.jar for potential mods
+[15:52:10] [Client thread/DEBUG] [FML/]: The mod container commons-logging-1.1.3.jar appears to be missing an mcmod.info file
+[15:52:10] [Client thread/DEBUG] [FML/]: Examining file netty-all-4.0.10.Final.jar for potential mods
+[15:52:10] [Client thread/DEBUG] [FML/]: The mod container netty-all-4.0.10.Final.jar appears to be missing an mcmod.info file
+[15:52:11] [Client thread/DEBUG] [FML/]: Examining file jna-5.12.1.jar for potential mods
+[15:52:11] [Client thread/DEBUG] [FML/]: The mod container jna-5.12.1.jar appears to be missing an mcmod.info file
+[15:52:11] [Client thread/DEBUG] [FML/]: Examining file jna-jpms-5.12.1.jar for potential mods
+[15:52:11] [Client thread/DEBUG] [FML/]: The mod container jna-jpms-5.12.1.jar appears to be missing an mcmod.info file
+[15:52:11] [Client thread/ERROR] [FML/]: Unable to read a class file correctly
+java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at cpw.mods.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:52) [ASMModParser.class:?]
+	at cpw.mods.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:72) [JarDiscoverer.class:?]
+	at cpw.mods.fml.common.discovery.ContainerType.findMods(ContainerType.java:42) [ContainerType.class:?]
+	at cpw.mods.fml.common.discovery.ModCandidate.explore(ModCandidate.java:71) [ModCandidate.class:?]
+	at cpw.mods.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:131) [ModDiscoverer.class:?]
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:364) [Loader.class:?]
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:489) [Loader.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:525) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:945) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_341]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_341]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-Caused by: java.lang.UnsatisfiedLinkError: no lwjgl64 in java.library.path
-	at java.lang.ClassLoader.loadLibrary(Unknown Source) ~[?:1.8.0_341]
-	at java.lang.Runtime.loadLibrary0(Unknown Source) ~[?:1.8.0_341]
-	at java.lang.System.loadLibrary(Unknown Source) ~[?:1.8.0_341]
-	at org.lwjgl.Sys$1.run(Sys.java:72) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_341]
-	at org.lwjgl.Sys.doLoadLibrary(Sys.java:66) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at org.lwjgl.Sys.loadLibrary(Sys.java:87) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at org.lwjgl.Sys.<clinit>(Sys.java:117) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at net.minecraft.client.Minecraft.getSystemTime(Minecraft.java:2821) ~[Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:79) ~[Main.class:?]
-	... 6 more
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: cpw.mods.fml.relauncher.FMLSecurityManager$ExitTrappedException
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at cpw.mods.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:25)
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.SecurityManager.checkExit(Unknown Source)
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.Runtime.exit(Unknown Source)
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.lang.System.exit(Unknown Source)
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
-[14:27:20] [main/INFO] [STDERR/]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[15:52:11] [Client thread/ERROR] [FML/]: There was a problem reading the entry META-INF/versions/9/module-info.class in the jar D:\_metroproject\_metroproject\_metroclient\libraries\jna-jpms-5.12.1.jar - probably a corrupt zip
+cpw.mods.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at cpw.mods.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:58) ~[ASMModParser.class:?]
+	at cpw.mods.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:72) [JarDiscoverer.class:?]
+	at cpw.mods.fml.common.discovery.ContainerType.findMods(ContainerType.java:42) [ContainerType.class:?]
+	at cpw.mods.fml.common.discovery.ModCandidate.explore(ModCandidate.java:71) [ModCandidate.class:?]
+	at cpw.mods.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:131) [ModDiscoverer.class:?]
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:364) [Loader.class:?]
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:489) [Loader.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:525) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:945) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_341]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_341]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at cpw.mods.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:52) ~[ASMModParser.class:?]
+	... 16 more
+[15:52:11] [Client thread/WARN] [FML/]: Zip file jna-jpms-5.12.1.jar failed to read properly, it will be ignored
+cpw.mods.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at cpw.mods.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:58) ~[ASMModParser.class:?]
+	at cpw.mods.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:72) [JarDiscoverer.class:?]
+	at cpw.mods.fml.common.discovery.ContainerType.findMods(ContainerType.java:42) [ContainerType.class:?]
+	at cpw.mods.fml.common.discovery.ModCandidate.explore(ModCandidate.java:71) [ModCandidate.class:?]
+	at cpw.mods.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:131) [ModDiscoverer.class:?]
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:364) [Loader.class:?]
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:489) [Loader.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:525) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:945) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_341]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_341]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_341]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at cpw.mods.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:52) ~[ASMModParser.class:?]
+	... 16 more
+[15:52:12] [Client thread/DEBUG] [FML/]: Examining file lzma-0.0.1.jar for potential mods
+[15:52:12] [Client thread/DEBUG] [FML/]: The mod container lzma-0.0.1.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file jinput-2.0.5.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container jinput-2.0.5.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-windows.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-windows.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file jutils-1.0.0.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container jutils-1.0.0.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file launchwrapper-1.12.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container launchwrapper-1.12.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file jopt-simple-4.5.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container jopt-simple-4.5.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file trove4j-3.0.3.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container trove4j-3.0.3.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file commons-compress-1.8.1.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container commons-compress-1.8.1.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file commons-lang3-3.3.2.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container commons-lang3-3.3.2.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file httpclient-4.3.3.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container httpclient-4.3.3.jar appears to be missing an mcmod.info file
+[15:52:13] [Client thread/DEBUG] [FML/]: Examining file httpcore-4.3.2.jar for potential mods
+[15:52:13] [Client thread/DEBUG] [FML/]: The mod container httpcore-4.3.2.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file log4j-api-2.0-beta9.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container log4j-api-2.0-beta9.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file log4j-core-2.0-beta9.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container log4j-core-2.0-beta9.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file lwjgl-2.9.4-nightly-20150209.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container lwjgl-2.9.4-nightly-20150209.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file lwjgl_util-2.9.4-nightly-20150209.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container lwjgl_util-2.9.4-nightly-20150209.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file asm-debug-all-5.2.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container asm-debug-all-5.2.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file scala-continuations-library_2.11-1.0.2.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container scala-continuations-library_2.11-1.0.2.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file scala-continuations-plugin_2.11.1-1.0.2.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container scala-continuations-plugin_2.11.1-1.0.2.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file scala-actors-migration_2.11-1.1.0.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container scala-actors-migration_2.11-1.1.0.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file scala-actors.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container scala-actors.jar appears to be missing an mcmod.info file
+[15:52:14] [Client thread/DEBUG] [FML/]: Examining file scala-compiler-2.11.1.jar for potential mods
+[15:52:14] [Client thread/DEBUG] [FML/]: The mod container scala-compiler-2.11.1.jar appears to be missing an mcmod.info file
+[15:52:17] [Client thread/DEBUG] [FML/]: Examining file scala-library-2.11.1.jar for potential mods
+[15:52:17] [Client thread/DEBUG] [FML/]: The mod container scala-library-2.11.1.jar appears to be missing an mcmod.info file
+[15:52:18] [Client thread/DEBUG] [FML/]: Examining file scala-parser-combinators_2.11-1.0.1.jar for potential mods
+[15:52:18] [Client thread/DEBUG] [FML/]: The mod container scala-parser-combinators_2.11-1.0.1.jar appears to be missing an mcmod.info file
+[15:52:18] [Client thread/DEBUG] [FML/]: Examining file scala-reflect-2.11.1.jar for potential mods
+[15:52:18] [Client thread/DEBUG] [FML/]: The mod container scala-reflect-2.11.1.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/DEBUG] [FML/]: Examining file scala-swing_2.11-1.0.1.jar for potential mods
+[15:52:19] [Client thread/DEBUG] [FML/]: The mod container scala-swing_2.11-1.0.1.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/DEBUG] [FML/]: Examining file scala-xml_2.11-1.0.2.jar for potential mods
+[15:52:19] [Client thread/DEBUG] [FML/]: The mod container scala-xml_2.11-1.0.2.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/DEBUG] [FML/]: Examining file twitch-5.16.jar for potential mods
+[15:52:19] [Client thread/DEBUG] [FML/]: The mod container twitch-5.16.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/DEBUG] [FML/]: Examining file twitch-external-platform-4.5-natives-windows-64.jar for potential mods
+[15:52:19] [Client thread/DEBUG] [FML/]: The mod container twitch-external-platform-4.5-natives-windows-64.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-windows-64.jar for potential mods
+[15:52:19] [Client thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-windows-64.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/DEBUG] [FML/]: Examining file vecmath-1.5.2.jar for potential mods
+[15:52:19] [Client thread/DEBUG] [FML/]: The mod container vecmath-1.5.2.jar appears to be missing an mcmod.info file
+[15:52:19] [Client thread/INFO] [FML/]: Forge Mod Loader has identified 3 mods to load
+[15:52:19] [Client thread/TRACE] [FML/]: Received a system property request ''
+[15:52:19] [Client thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[15:52:19] [Client thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/fml/lang/en_US.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang af_ZA at assets/forge/lang/af_ZA.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ar_SA at assets/forge/lang/ar_SA.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang br_FR at assets/forge/lang/br_FR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ca_ES at assets/forge/lang/ca_ES.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/forge/lang/cs_CZ.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang da_DK at assets/forge/lang/da_DK.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/forge/lang/de_DE.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang el_GR at assets/forge/lang/el_GR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/forge/lang/en_US.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/forge/lang/es_ES.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fa_IR at assets/forge/lang/fa_IR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fi_FI at assets/forge/lang/fi_FI.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/forge/lang/fr_FR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang he_IL at assets/forge/lang/he_IL.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/forge/lang/hu_HU.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_IT at assets/forge/lang/it_IT.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/forge/lang/ja_JP.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/forge/lang/ko_KR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lt_LT at assets/forge/lang/lt_LT.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nb_NO at assets/forge/lang/nb_NO.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nl_NL at assets/forge/lang/nl_NL.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nn_NO at assets/forge/lang/nn_NO.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang no_NO at assets/forge/lang/no_NO.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/forge/lang/pl_PL.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_BR at assets/forge/lang/pt_BR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_PT at assets/forge/lang/pt_PT.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/forge/lang/ro_RO.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ru_RU at assets/forge/lang/ru_RU.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sl_SI at assets/forge/lang/sl_SI.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sr_SP at assets/forge/lang/sr_SP.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/forge/lang/sv_SE.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tr_TR at assets/forge/lang/tr_TR.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/forge/lang/uk_UA.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang vi_VN at assets/forge/lang/vi_VN.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/forge/lang/zh_CN.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/forge/lang/zh_TW.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang af_ZA at assets/minecraft/lang/af_ZA.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ar_SA at assets/minecraft/lang/ar_SA.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ast_ES at assets/minecraft/lang/ast_ES.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang az_AZ at assets/minecraft/lang/az_AZ.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang bg_BG at assets/minecraft/lang/bg_BG.lang into language system
+[15:52:19] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ca_ES at assets/minecraft/lang/ca_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/minecraft/lang/cs_CZ.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cy_GB at assets/minecraft/lang/cy_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang da_DK at assets/minecraft/lang/da_DK.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/minecraft/lang/de_DE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang el_GR at assets/minecraft/lang/el_GR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_AU at assets/minecraft/lang/en_AU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_CA at assets/minecraft/lang/en_CA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_GB at assets/minecraft/lang/en_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_PT at assets/minecraft/lang/en_PT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/minecraft/lang/en_US.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US1 at assets/minecraft/lang/en_US1.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eo_UY at assets/minecraft/lang/eo_UY.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_AR at assets/minecraft/lang/es_AR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/minecraft/lang/es_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_MX at assets/minecraft/lang/es_MX.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_UY at assets/minecraft/lang/es_UY.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_VE at assets/minecraft/lang/es_VE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang et_EE at assets/minecraft/lang/et_EE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eu_ES at assets/minecraft/lang/eu_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fa_IR at assets/minecraft/lang/fa_IR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fil_PH at assets/minecraft/lang/fil_PH.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fi_FI at assets/minecraft/lang/fi_FI.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_CA at assets/minecraft/lang/fr_CA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/minecraft/lang/fr_FR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ga_IE at assets/minecraft/lang/ga_IE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gl_ES at assets/minecraft/lang/gl_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gv_IM at assets/minecraft/lang/gv_IM.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang he_IL at assets/minecraft/lang/he_IL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hi_IN at assets/minecraft/lang/hi_IN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hr_HR at assets/minecraft/lang/hr_HR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/minecraft/lang/hu_HU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hy_AM at assets/minecraft/lang/hy_AM.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang id_ID at assets/minecraft/lang/id_ID.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang is_IS at assets/minecraft/lang/is_IS.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_IT at assets/minecraft/lang/it_IT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/minecraft/lang/ja_JP.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ka_GE at assets/minecraft/lang/ka_GE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/minecraft/lang/ko_KR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang kw_GB at assets/minecraft/lang/kw_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang la_LA at assets/minecraft/lang/la_LA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lb_LU at assets/minecraft/lang/lb_LU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lt_LT at assets/minecraft/lang/lt_LT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lv_LV at assets/minecraft/lang/lv_LV.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mi_NZ at assets/minecraft/lang/mi_NZ.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ms_MY at assets/minecraft/lang/ms_MY.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mt_MT at assets/minecraft/lang/mt_MT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nds_DE at assets/minecraft/lang/nds_DE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nl_NL at assets/minecraft/lang/nl_NL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nn_NO at assets/minecraft/lang/nn_NO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang no_NO at assets/minecraft/lang/no_NO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang oc_FR at assets/minecraft/lang/oc_FR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/minecraft/lang/pl_PL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_BR at assets/minecraft/lang/pt_BR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_PT at assets/minecraft/lang/pt_PT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang qya_AA at assets/minecraft/lang/qya_AA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/minecraft/lang/ro_RO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sk_SK at assets/minecraft/lang/sk_SK.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sl_SI at assets/minecraft/lang/sl_SI.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sr_SP at assets/minecraft/lang/sr_SP.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/minecraft/lang/sv_SE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang th_TH at assets/minecraft/lang/th_TH.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tlh_AA at assets/minecraft/lang/tlh_AA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tr_TR at assets/minecraft/lang/tr_TR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/minecraft/lang/uk_UA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang val_ES at assets/minecraft/lang/val_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang vi_VN at assets/minecraft/lang/vi_VN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/minecraft/lang/zh_CN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/minecraft/lang/zh_TW.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/minecraft/optifine/lang/cs_CZ.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/minecraft/optifine/lang/de_DE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_GB at assets/minecraft/optifine/lang/en_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/minecraft/optifine/lang/en_US.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/minecraft/optifine/lang/es_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_MX at assets/minecraft/optifine/lang/es_MX.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang et_EE at assets/minecraft/optifine/lang/et_EE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_CA at assets/minecraft/optifine/lang/fr_CA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/minecraft/optifine/lang/fr_FR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/minecraft/optifine/lang/hu_HU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_it at assets/minecraft/optifine/lang/it_it.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/minecraft/optifine/lang/ja_JP.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/minecraft/optifine/lang/ko_KR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lb_LU at assets/minecraft/optifine/lang/lb_LU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/minecraft/optifine/lang/pl_PL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_br at assets/minecraft/optifine/lang/pt_br.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/minecraft/optifine/lang/ro_RO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ru_RU at assets/minecraft/optifine/lang/ru_RU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/minecraft/optifine/lang/sv_SE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/minecraft/optifine/lang/uk_UA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/minecraft/optifine/lang/zh_CN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/minecraft/optifine/lang/zh_TW.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang af_ZA at assets/realms/lang/af_ZA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ar_SA at assets/realms/lang/ar_SA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ast_ES at assets/realms/lang/ast_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang az_AZ at assets/realms/lang/az_AZ.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang bg_BG at assets/realms/lang/bg_BG.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ca_ES at assets/realms/lang/ca_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/realms/lang/cs_CZ.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cy_GB at assets/realms/lang/cy_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang da_DK at assets/realms/lang/da_DK.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/realms/lang/de_DE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang el_GR at assets/realms/lang/el_GR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_AU at assets/realms/lang/en_AU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_CA at assets/realms/lang/en_CA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_GB at assets/realms/lang/en_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_PT at assets/realms/lang/en_PT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eo_UY at assets/realms/lang/eo_UY.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_AR at assets/realms/lang/es_AR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/realms/lang/es_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_MX at assets/realms/lang/es_MX.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_UY at assets/realms/lang/es_UY.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_VE at assets/realms/lang/es_VE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang et_EE at assets/realms/lang/et_EE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eu_ES at assets/realms/lang/eu_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fa_IR at assets/realms/lang/fa_IR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fil_PH at assets/realms/lang/fil_PH.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fi_FI at assets/realms/lang/fi_FI.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_CA at assets/realms/lang/fr_CA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/realms/lang/fr_FR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ga_IE at assets/realms/lang/ga_IE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gl_ES at assets/realms/lang/gl_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gv_IM at assets/realms/lang/gv_IM.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang he_IL at assets/realms/lang/he_IL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hi_IN at assets/realms/lang/hi_IN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hr_HR at assets/realms/lang/hr_HR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/realms/lang/hu_HU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hy_AM at assets/realms/lang/hy_AM.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang id_ID at assets/realms/lang/id_ID.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang is_IS at assets/realms/lang/is_IS.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_IT at assets/realms/lang/it_IT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/realms/lang/ja_JP.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ka_GE at assets/realms/lang/ka_GE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/realms/lang/ko_KR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang kw_GB at assets/realms/lang/kw_GB.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang la_LA at assets/realms/lang/la_LA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lb_LU at assets/realms/lang/lb_LU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lt_LT at assets/realms/lang/lt_LT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lv_LV at assets/realms/lang/lv_LV.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mi_NZ at assets/realms/lang/mi_NZ.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ms_MY at assets/realms/lang/ms_MY.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mt_MT at assets/realms/lang/mt_MT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nds_DE at assets/realms/lang/nds_DE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nl_NL at assets/realms/lang/nl_NL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nn_NO at assets/realms/lang/nn_NO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang no_NO at assets/realms/lang/no_NO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang oc_FR at assets/realms/lang/oc_FR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/realms/lang/pl_PL.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_BR at assets/realms/lang/pt_BR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_PT at assets/realms/lang/pt_PT.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang qya_AA at assets/realms/lang/qya_AA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/realms/lang/ro_RO.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ru_RU at assets/realms/lang/ru_RU.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sk_SK at assets/realms/lang/sk_SK.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sl_SI at assets/realms/lang/sl_SI.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sr_SP at assets/realms/lang/sr_SP.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/realms/lang/sv_SE.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang th_TH at assets/realms/lang/th_TH.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tlh_AA at assets/realms/lang/tlh_AA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tr_TR at assets/realms/lang/tr_TR.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/realms/lang/uk_UA.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang val_ES at assets/realms/lang/val_ES.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang vi_VN at assets/realms/lang/vi_VN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/realms/lang/zh_CN.lang into language system
+[15:52:20] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/realms/lang/zh_TW.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/fml/lang/en_US.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang af_ZA at assets/forge/lang/af_ZA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ar_SA at assets/forge/lang/ar_SA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang br_FR at assets/forge/lang/br_FR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ca_ES at assets/forge/lang/ca_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/forge/lang/cs_CZ.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang da_DK at assets/forge/lang/da_DK.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/forge/lang/de_DE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang el_GR at assets/forge/lang/el_GR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/forge/lang/en_US.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/forge/lang/es_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fa_IR at assets/forge/lang/fa_IR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fi_FI at assets/forge/lang/fi_FI.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/forge/lang/fr_FR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang he_IL at assets/forge/lang/he_IL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/forge/lang/hu_HU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_IT at assets/forge/lang/it_IT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/forge/lang/ja_JP.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/forge/lang/ko_KR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lt_LT at assets/forge/lang/lt_LT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nb_NO at assets/forge/lang/nb_NO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nl_NL at assets/forge/lang/nl_NL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nn_NO at assets/forge/lang/nn_NO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang no_NO at assets/forge/lang/no_NO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/forge/lang/pl_PL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_BR at assets/forge/lang/pt_BR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_PT at assets/forge/lang/pt_PT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/forge/lang/ro_RO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ru_RU at assets/forge/lang/ru_RU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sl_SI at assets/forge/lang/sl_SI.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sr_SP at assets/forge/lang/sr_SP.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/forge/lang/sv_SE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tr_TR at assets/forge/lang/tr_TR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/forge/lang/uk_UA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang vi_VN at assets/forge/lang/vi_VN.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/forge/lang/zh_CN.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/forge/lang/zh_TW.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang af_ZA at assets/minecraft/lang/af_ZA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ar_SA at assets/minecraft/lang/ar_SA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ast_ES at assets/minecraft/lang/ast_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang az_AZ at assets/minecraft/lang/az_AZ.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang bg_BG at assets/minecraft/lang/bg_BG.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ca_ES at assets/minecraft/lang/ca_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/minecraft/lang/cs_CZ.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cy_GB at assets/minecraft/lang/cy_GB.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang da_DK at assets/minecraft/lang/da_DK.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/minecraft/lang/de_DE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang el_GR at assets/minecraft/lang/el_GR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_AU at assets/minecraft/lang/en_AU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_CA at assets/minecraft/lang/en_CA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_GB at assets/minecraft/lang/en_GB.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_PT at assets/minecraft/lang/en_PT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/minecraft/lang/en_US.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US1 at assets/minecraft/lang/en_US1.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eo_UY at assets/minecraft/lang/eo_UY.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_AR at assets/minecraft/lang/es_AR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/minecraft/lang/es_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_MX at assets/minecraft/lang/es_MX.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_UY at assets/minecraft/lang/es_UY.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_VE at assets/minecraft/lang/es_VE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang et_EE at assets/minecraft/lang/et_EE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eu_ES at assets/minecraft/lang/eu_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fa_IR at assets/minecraft/lang/fa_IR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fil_PH at assets/minecraft/lang/fil_PH.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fi_FI at assets/minecraft/lang/fi_FI.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_CA at assets/minecraft/lang/fr_CA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/minecraft/lang/fr_FR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ga_IE at assets/minecraft/lang/ga_IE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gl_ES at assets/minecraft/lang/gl_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gv_IM at assets/minecraft/lang/gv_IM.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang he_IL at assets/minecraft/lang/he_IL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hi_IN at assets/minecraft/lang/hi_IN.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hr_HR at assets/minecraft/lang/hr_HR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/minecraft/lang/hu_HU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hy_AM at assets/minecraft/lang/hy_AM.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang id_ID at assets/minecraft/lang/id_ID.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang is_IS at assets/minecraft/lang/is_IS.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_IT at assets/minecraft/lang/it_IT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/minecraft/lang/ja_JP.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ka_GE at assets/minecraft/lang/ka_GE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/minecraft/lang/ko_KR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang kw_GB at assets/minecraft/lang/kw_GB.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang la_LA at assets/minecraft/lang/la_LA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lb_LU at assets/minecraft/lang/lb_LU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lt_LT at assets/minecraft/lang/lt_LT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lv_LV at assets/minecraft/lang/lv_LV.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mi_NZ at assets/minecraft/lang/mi_NZ.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ms_MY at assets/minecraft/lang/ms_MY.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mt_MT at assets/minecraft/lang/mt_MT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nds_DE at assets/minecraft/lang/nds_DE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nl_NL at assets/minecraft/lang/nl_NL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nn_NO at assets/minecraft/lang/nn_NO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang no_NO at assets/minecraft/lang/no_NO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang oc_FR at assets/minecraft/lang/oc_FR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/minecraft/lang/pl_PL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_BR at assets/minecraft/lang/pt_BR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_PT at assets/minecraft/lang/pt_PT.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang qya_AA at assets/minecraft/lang/qya_AA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/minecraft/lang/ro_RO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sk_SK at assets/minecraft/lang/sk_SK.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sl_SI at assets/minecraft/lang/sl_SI.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sr_SP at assets/minecraft/lang/sr_SP.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/minecraft/lang/sv_SE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang th_TH at assets/minecraft/lang/th_TH.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tlh_AA at assets/minecraft/lang/tlh_AA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tr_TR at assets/minecraft/lang/tr_TR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/minecraft/lang/uk_UA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang val_ES at assets/minecraft/lang/val_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang vi_VN at assets/minecraft/lang/vi_VN.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/minecraft/lang/zh_CN.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/minecraft/lang/zh_TW.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/minecraft/optifine/lang/cs_CZ.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/minecraft/optifine/lang/de_DE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_GB at assets/minecraft/optifine/lang/en_GB.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/minecraft/optifine/lang/en_US.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/minecraft/optifine/lang/es_ES.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_MX at assets/minecraft/optifine/lang/es_MX.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang et_EE at assets/minecraft/optifine/lang/et_EE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_CA at assets/minecraft/optifine/lang/fr_CA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/minecraft/optifine/lang/fr_FR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/minecraft/optifine/lang/hu_HU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_it at assets/minecraft/optifine/lang/it_it.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/minecraft/optifine/lang/ja_JP.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/minecraft/optifine/lang/ko_KR.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lb_LU at assets/minecraft/optifine/lang/lb_LU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/minecraft/optifine/lang/pl_PL.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_br at assets/minecraft/optifine/lang/pt_br.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/minecraft/optifine/lang/ro_RO.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ru_RU at assets/minecraft/optifine/lang/ru_RU.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/minecraft/optifine/lang/sv_SE.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/minecraft/optifine/lang/uk_UA.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/minecraft/optifine/lang/zh_CN.lang into language system
+[15:52:21] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/minecraft/optifine/lang/zh_TW.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang af_ZA at assets/realms/lang/af_ZA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ar_SA at assets/realms/lang/ar_SA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ast_ES at assets/realms/lang/ast_ES.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang az_AZ at assets/realms/lang/az_AZ.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang bg_BG at assets/realms/lang/bg_BG.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ca_ES at assets/realms/lang/ca_ES.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cs_CZ at assets/realms/lang/cs_CZ.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang cy_GB at assets/realms/lang/cy_GB.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang da_DK at assets/realms/lang/da_DK.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang de_DE at assets/realms/lang/de_DE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang el_GR at assets/realms/lang/el_GR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_AU at assets/realms/lang/en_AU.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_CA at assets/realms/lang/en_CA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_GB at assets/realms/lang/en_GB.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_PT at assets/realms/lang/en_PT.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eo_UY at assets/realms/lang/eo_UY.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_AR at assets/realms/lang/es_AR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_ES at assets/realms/lang/es_ES.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_MX at assets/realms/lang/es_MX.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_UY at assets/realms/lang/es_UY.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang es_VE at assets/realms/lang/es_VE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang et_EE at assets/realms/lang/et_EE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang eu_ES at assets/realms/lang/eu_ES.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fa_IR at assets/realms/lang/fa_IR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fil_PH at assets/realms/lang/fil_PH.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fi_FI at assets/realms/lang/fi_FI.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_CA at assets/realms/lang/fr_CA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang fr_FR at assets/realms/lang/fr_FR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ga_IE at assets/realms/lang/ga_IE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gl_ES at assets/realms/lang/gl_ES.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang gv_IM at assets/realms/lang/gv_IM.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang he_IL at assets/realms/lang/he_IL.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hi_IN at assets/realms/lang/hi_IN.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hr_HR at assets/realms/lang/hr_HR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hu_HU at assets/realms/lang/hu_HU.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang hy_AM at assets/realms/lang/hy_AM.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang id_ID at assets/realms/lang/id_ID.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang is_IS at assets/realms/lang/is_IS.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang it_IT at assets/realms/lang/it_IT.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ja_JP at assets/realms/lang/ja_JP.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ka_GE at assets/realms/lang/ka_GE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ko_KR at assets/realms/lang/ko_KR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang kw_GB at assets/realms/lang/kw_GB.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang la_LA at assets/realms/lang/la_LA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lb_LU at assets/realms/lang/lb_LU.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lt_LT at assets/realms/lang/lt_LT.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang lv_LV at assets/realms/lang/lv_LV.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mi_NZ at assets/realms/lang/mi_NZ.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ms_MY at assets/realms/lang/ms_MY.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang mt_MT at assets/realms/lang/mt_MT.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nds_DE at assets/realms/lang/nds_DE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nl_NL at assets/realms/lang/nl_NL.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang nn_NO at assets/realms/lang/nn_NO.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang no_NO at assets/realms/lang/no_NO.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang oc_FR at assets/realms/lang/oc_FR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pl_PL at assets/realms/lang/pl_PL.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_BR at assets/realms/lang/pt_BR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang pt_PT at assets/realms/lang/pt_PT.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang qya_AA at assets/realms/lang/qya_AA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ro_RO at assets/realms/lang/ro_RO.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang ru_RU at assets/realms/lang/ru_RU.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sk_SK at assets/realms/lang/sk_SK.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sl_SI at assets/realms/lang/sl_SI.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sr_SP at assets/realms/lang/sr_SP.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang sv_SE at assets/realms/lang/sv_SE.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang th_TH at assets/realms/lang/th_TH.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tlh_AA at assets/realms/lang/tlh_AA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang tr_TR at assets/realms/lang/tr_TR.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang uk_UA at assets/realms/lang/uk_UA.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang val_ES at assets/realms/lang/val_ES.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang vi_VN at assets/realms/lang/vi_VN.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_CN at assets/realms/lang/zh_CN.lang into language system
+[15:52:22] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang zh_TW at assets/realms/lang/zh_TW.lang into language system
+[15:52:22] [Client thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[15:52:22] [Client thread/TRACE] [FML/]: All mod requirements are satisfied
+[15:52:22] [Client thread/TRACE] [FML/]: Sorting mods into an ordered list
+[15:52:22] [Client thread/TRACE] [FML/]: Mod sorting completed successfully
+[15:52:22] [Client thread/DEBUG] [FML/]: Mod sorting data
+[15:52:22] [Client thread/DEBUG] [FML/]: No user mods found to sort
+[15:52:22] [Client thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[15:52:22] [Client thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[15:52:22] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0,016s
+[15:52:22] [Client thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[15:52:22] [Client thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[15:52:22] [Client thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[15:52:22] [Client thread/TRACE] [FML/FML]: The mod FML accepts its own version (7.10.99.99)
+[15:52:22] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge] at CLIENT
+[15:52:22] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge] at SERVER
+[15:52:23] [Client thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 0,690s
+[15:52:23] [Client thread/TRACE] [Forge/Forge]: Sending event FMLConstructionEvent to mod Forge
+[15:52:23] [Client thread/TRACE] [FML/Forge]: Mod Forge is using network checker : No network checking performed
+[15:52:23] [Client thread/TRACE] [FML/Forge]: Testing mod Forge to verify it accepts its own version in a remote connection
+[15:52:23] [Client thread/TRACE] [FML/Forge]: The mod Forge accepts its own version (10.13.4.1614)
+[15:52:23] [Client thread/TRACE] [Forge/Forge]: Sent event FMLConstructionEvent to mod Forge
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0,022s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Finished: Construction took 0,727s
+[15:52:23] [Client thread/DEBUG] [FML/]: Mod signature data
+[15:52:23] [Client thread/DEBUG] [FML/]:  	Valid Signatures:
+[15:52:23] [Client thread/DEBUG] [FML/]:  	Missing Signatures:
+[15:52:23] [Client thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.05)	minecraft.jar
+[15:52:23] [Client thread/DEBUG] [FML/]: 		FML	(Forge Mod Loader	7.10.99.99)	main
+[15:52:23] [Client thread/DEBUG] [FML/]: 		Forge	(Minecraft Forge	10.13.4.1614)	main
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0,011s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0,009s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0,003s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading - LanguageManager took 0,060s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0,061s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 0,083s
+[15:52:23] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[15:52:23] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[15:52:23] [Client thread/INFO] [FML/]: Processing ObjectHolder annotations
+[15:52:23] [Client thread/INFO] [FML/]: Found 341 ObjectHolder annotations
+[15:52:23] [Client thread/INFO] [FML/]: Identifying ItemStackHolder annotations
+[15:52:23] [Client thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[15:52:23] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[15:52:23] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0,002s
+[15:52:23] [Client thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[15:52:23] [Client thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0,002s
+[15:52:23] [Client thread/TRACE] [Forge/Forge]: Sending event FMLPreInitializationEvent to mod Forge
+[15:52:23] [Client thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
+[15:52:23] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0,069s
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Finished: PreInitialization took 0,073s
+[15:52:23] [Client thread/INFO] [FML/]: Applying holder lookups
+[15:52:23] [Client thread/INFO] [FML/]: Holder lookups applied
+[15:52:23] [Client thread/INFO] [FML/]: Injecting itemstacks
+[15:52:23] [Client thread/INFO] [FML/]: Itemstack injection complete
+[15:52:23] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0,001s
+[15:52:23] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:52:23] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.Gson.fromJson(Gson.java:815)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.Gson.fromJson(Gson.java:768)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.Gson.fromJson(Gson.java:717)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.Gson.fromJson(Gson.java:689)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraftforge.common.ForgeVersion$1.run(ForgeVersion.java:94)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at com.google.gson.Gson.fromJson(Gson.java:803)
+[15:52:23] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	... 4 more
+[15:52:23] [Thread-10/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[15:52:23] [Thread-10/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 0,929s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0,012s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0,009s
+[15:52:24] [Thread-10/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[15:52:24] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0,015s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0,020s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Render Manager took 0,291s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0,000s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0,058s
+[15:52:24] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading GL properties took 0,003s
+[15:52:25] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Render Global instance took 0,173s
+[15:52:25] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Building Blocks Texture took 0,832s
+[15:52:25] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Anisotropy and Mipmaps took 0,001s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0,006s
+[15:52:27] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] allocateTextureMap 4 16 16 
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0,033s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Blocks Texture took 1,269s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0,000s
+[15:52:27] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] allocateTextureMap 0 16 16 
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0,032s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Items Texture took 0,045s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Viewport took 0,010s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: Rendering Setup took 2,683s
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0,001s
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0,001s
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sending event FMLInitializationEvent to mod Forge
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sent event FMLInitializationEvent to mod Forge
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0,001s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: Initialization took 0,003s
+[15:52:27] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0,004s
+[15:52:27] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0,001s
+[15:52:27] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Forge
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sending event IMCEvent to mod Forge
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sent event IMCEvent to mod Forge
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0,001s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0,006s
+[15:52:27] [Client thread/INFO] [FML/]: Injecting itemstacks
+[15:52:27] [Client thread/INFO] [FML/]: Itemstack injection complete
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0,001s
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0,001s
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sending event FMLPostInitializationEvent to mod Forge
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPostInitializationEvent to mod Forge
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0,193s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: PostInitialization took 0,195s
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[15:52:27] [Client thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0,005s
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[15:52:27] [Client thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0,001s
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sending event FMLLoadCompleteEvent to mod Forge
+[15:52:27] [Client thread/DEBUG] [FML/Forge]: Forge RecipeSorter Baking:
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   11: RecipeEntry("Before", UNKNOWN, )
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   10: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   9: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   8: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   7: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   6: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   5: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   4: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   3: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   2: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[15:52:27] [Client thread/DEBUG] [FML/Forge]:   1: RecipeEntry("After", UNKNOWN, )
+[15:52:27] [Client thread/DEBUG] [FML/Forge]: Sorting recipies
+[15:52:27] [Client thread/TRACE] [Forge/Forge]: Sent event FMLLoadCompleteEvent to mod Forge
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0,014s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Finished: LoadComplete took 0,020s
+[15:52:27] [Client thread/DEBUG] [FML/]: Freezing block and item id maps
+[15:52:27] [Client thread/DEBUG] [FML/]: Registry consistency check successful
+[15:52:27] [Client thread/DEBUG] [FML/]: Registry consistency check successful
+[15:52:27] [Client thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 3 mods
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0,001s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0,005s
+[15:52:27] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0,002s
+[15:52:30] [Client thread/DEBUG] [FML/]: Bar Finished: Texture Loading took 2,403s
+[15:52:31] [Client thread/DEBUG] [FML/]: Bar Finished: Mipmap generation took 0,479s
+[15:52:31] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0,377s
+[15:52:31] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] allocateTextureMap 4 4096 4096 
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 7,303s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/blocks.png took 10,917s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii.png took 0,011s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/lightMap_1 took 0,001s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii_sga.png took 0,009s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Finished: Texture Loading took 0,128s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Finished: Mipmap generation took 0,007s
+[15:52:38] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0,009s
+[15:52:38] [Client thread/INFO] [shadersmod.common.SMCLog/]: [Shaders] allocateTextureMap 0 256 256 
+[15:52:39] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0,754s
+[15:52:39] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/items.png took 0,891s
+[15:52:39] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading Texture Manager took 11,828s
+[15:52:39] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:52:39] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[15:52:39] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[15:52:39] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:52:39] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:52:39] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[15:52:39] [Thread-12/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[15:52:39] [Thread-12/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:52:39] [Thread-12/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[15:52:40] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading took 12,648s
+[15:52:40] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 12,649s
+[15:52:40] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 12,656s
+[15:52:40] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[15:52:40] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[15:52:40] [Client thread/DEBUG] [FML/]: Bar Finished: Loading took 39,675s
+[15:52:40] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:52:41] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureUtils$1 took 1,629s
+[15:53:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[15:53:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[15:53:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[15:53:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 

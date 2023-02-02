@@ -8,4 +8,4 @@
  */
 
 rootProject.name = '_metroproject'
-include('_metroclient', '_metroserver')
+include('_metroclient', '_metroserver', '_metroblocks')
