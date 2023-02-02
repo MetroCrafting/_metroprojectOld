@@ -44,4 +44,9 @@ public class MathUtils {
       public static float toRad(float angle) {
             return angle / 180.0F * 3.1415927F;
       }
+      
+      public static float roundToFloat(double d)
+      {
+          return (float)((double)Math.round(d * 1.0E8D) / 1.0E8D);
+      }
 }

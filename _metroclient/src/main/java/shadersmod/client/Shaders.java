@@ -4086,10 +4086,10 @@ public class Shaders {
             if (shaderPackLoaded) {
                   List listFiles = new ArrayList();
                   String PREFIX = "/shaders/lang/";
-                  String EN_US = "en_US";
+                  String RU_RU = "ru_RU";
                   String SUFFIX = ".lang";
-                  listFiles.add(PREFIX + EN_US + SUFFIX);
-                  if (!Config.getGameSettings().language.equals(EN_US)) {
+                  listFiles.add(PREFIX + RU_RU + SUFFIX);
+                  if (!Config.getGameSettings().language.equals(RU_RU)) {
                         listFiles.add(PREFIX + Config.getGameSettings().language + SUFFIX);
                   }
 

@@ -357,7 +357,7 @@ public class RenderBlocks
                         var6 = this.renderBlockFire((BlockFire)par1Block, par2, par3, par4);
                         return var6;
                     case 4:
-                        var6 = this.renderBlockFluids(par1Block, par2, par3, par4);
+                        var6 = this.renderBlockLiquid(par1Block, par2, par3, par4);
                         return var6;
                     case 5:
                         var6 = this.renderBlockRedstoneWire(par1Block, par2, par3, par4);
@@ -4518,7 +4518,7 @@ public class RenderBlocks
     /**
      * Renders a block based on the BlockLiquid class at the given coordinates
      */
-    public boolean renderBlockFluids(Block p_147721_1_, int p_147721_2_, int p_147721_3_, int p_147721_4_)
+    public boolean renderBlockLiquid(Block p_147721_1_, int p_147721_2_, int p_147721_3_, int p_147721_4_) // renderBlockFluid
     {
         Tessellator var5 = Tessellator.instance;
         int var6 = CustomColorizer.getFluidColor(p_147721_1_, this.blockAccess, p_147721_2_, p_147721_3_, p_147721_4_);

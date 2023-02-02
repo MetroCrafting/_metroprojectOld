@@ -287,7 +287,7 @@ public class LanguageRegistry
                 added.add(lang);
                 LanguageRegistry.instance().injectLanguage(lang, StringTranslate.parseLangFile(zf.getInputStream(ze)));
                 // Ensure en_US is available to StringTranslate on the server
-                if ("en_US".equals(lang) && side == Side.SERVER)
+                if ("ru_RU".equals(lang) && side == Side.SERVER)
                 {
                     StringTranslate.inject(zf.getInputStream(ze));
                 }

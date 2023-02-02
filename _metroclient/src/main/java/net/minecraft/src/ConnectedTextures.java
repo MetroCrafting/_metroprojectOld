@@ -1048,6 +1048,14 @@ public class ConnectedTextures {
             if (Config.isFromDefaultResourcePack(new ResourceLocation("textures/blocks/sandstone_normal.png"))) {
                   list.add(defPath + "sandstone.properties");
             }
+            
+            if (Config.isFromDefaultResourcePack(new ResourceLocation("textures/blocks/bedrock.png"))) {
+                list.add(defPath + "bedrock/bedrock.properties");
+            }
+            
+            if (Config.isFromDefaultResourcePack(new ResourceLocation("textures/blocks/stone.png"))) {
+                list.add(defPath + "concente_a/_block.properties");
+            }
 
             String[] colors = new String[]{"white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "silver", "cyan", "purple", "blue", "brown", "green", "red", "black"};
 

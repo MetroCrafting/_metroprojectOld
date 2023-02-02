@@ -299,27 +299,27 @@ public class Minecraft implements IPlayerUsage
     private String debugProfilerName = "root";
     private static final String __OBFID = "CL_00000631";
 
-    public Minecraft(Session p_i1103_1_, int p_i1103_2_, int p_i1103_3_, boolean p_i1103_4_, boolean p_i1103_5_, File p_i1103_6_, File p_i1103_7_, File p_i1103_8_, Proxy p_i1103_9_, String p_i1103_10_, Multimap p_i1103_11_, String p_i1103_12_)
+    public Minecraft(Session session, int width, int height, boolean fullscreen, boolean isDemo, File mcDataDir, File fileAssets, File fileResourcepacks, Proxy proxy, String launchedVersion, Multimap versionType, String p_i1103_12_)
     {
         theMinecraft = this;
-        this.mcDataDir = p_i1103_6_;
-        this.fileAssets = p_i1103_7_;
-        this.fileResourcepacks = p_i1103_8_;
-        this.launchedVersion = p_i1103_10_;
-        this.versionType = p_i1103_11_;
-        this.mcDefaultResourcePack = new DefaultResourcePack((new ResourceIndex(p_i1103_7_, p_i1103_12_)).getPackMcmeta());
+        this.mcDataDir = mcDataDir;
+        this.fileAssets = fileAssets;
+        this.fileResourcepacks = fileResourcepacks;
+        this.launchedVersion = launchedVersion;
+        this.versionType = versionType;
+        this.mcDefaultResourcePack = new DefaultResourcePack((new ResourceIndex(fileAssets, p_i1103_12_)).getPackMcmeta());
         this.addDefaultResourcePack();
-        this.proxy = p_i1103_9_ == null ? Proxy.NO_PROXY : p_i1103_9_;
-        this.sessionType = (new YggdrasilAuthenticationService(p_i1103_9_, UUID.randomUUID().toString())).createMinecraftSessionService();
+        this.proxy = proxy == null ? Proxy.NO_PROXY : proxy;
+        this.sessionType = (new YggdrasilAuthenticationService(proxy, UUID.randomUUID().toString())).createMinecraftSessionService();
         this.startTimerHackThread();
-        this.session = p_i1103_1_;
-        logger.info("Setting user: " + p_i1103_1_.getUsername());
-        this.isDemo = p_i1103_5_;
-        this.displayWidth = p_i1103_2_;
-        this.displayHeight = p_i1103_3_;
-        this.tempDisplayWidth = p_i1103_2_;
-        this.tempDisplayHeight = p_i1103_3_;
-        this.fullscreen = p_i1103_4_;
+        this.session = session;
+        logger.info("Setting user: " + session.getUsername());
+        this.isDemo = isDemo;
+        this.displayWidth = width;
+        this.displayHeight = height;
+        this.tempDisplayWidth = width;
+        this.tempDisplayHeight = height;
+        this.fullscreen = fullscreen;
         this.jvm64bit = isJvm64bit();
         ImageIO.setUseCache(false);
         Bootstrap.register();

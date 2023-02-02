@@ -499,7 +499,7 @@ public abstract class GuiContainer extends GuiScreen
      * Called when the mouse is moved or a mouse button is released.  Signature: (mouseX, mouseY, which) which==-1 is
      * mouseMove, which==0 or which==1 is mouseUp
      */
-    public void mouseMovedOrUp(int mouseX, int mouseY, int which)
+    protected void mouseMovedOrUp(int mouseX, int mouseY, int which)
     {
         super.mouseMovedOrUp(mouseX, mouseY, which); //Forge, Call parent to release buttons
         Slot slot = this.getSlotAtPosition(mouseX, mouseY);

@@ -32,7 +32,7 @@ public class StringTranslate
 
     public StringTranslate()
     {
-        InputStream inputstream = StringTranslate.class.getResourceAsStream("/assets/minecraft/lang/en_US.lang");
+        InputStream inputstream = StringTranslate.class.getResourceAsStream("/assets/minecraft/lang/ru_RU.lang");
         languageList = Maps.newHashMap();
         inject(this, inputstream);
     }
