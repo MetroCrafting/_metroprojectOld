@@ -1,7 +1,7 @@
 # _metroproject
 
 PROGRAM ARGS:
--version {}
+--version {}
 --accessToken FML
 --userProperties {}
 --tweakClass cpw.mods.fml.common.launcher.FMLTweaker
