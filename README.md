@@ -8,6 +8,6 @@ PROGRAM ARGS:
 --tweakClass optifine.OptiFineForgeTweaker
 
 VM ARGS:
--Xms1024M 
+-Xms128M 
 -Xmx1024M 
 -Dfml.ignoreInvalidMinecraftCertificates=true
